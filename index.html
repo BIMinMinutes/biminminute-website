@@ -5,332 +5,283 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0b1120">
-<title>BIM in Minutes | Explore BIM Technology</title>
-<meta name="description" content="Explore BIM, Revit, automation and digital construction through practical tutorials and learning resources.">
+<title>BIM in Minutes | Learn BIM Simply</title>
+<meta name="description" content="Learn BIM, Revit, automation and digital construction through practical tutorials and videos.">
 
 <style>
 :root {
-  --bg: #0b1120;
-  --panel: #121d30;
-  --panel2: #18263b;
-  --text: #f3f7fc;
-  --muted: #a6b4c8;
-  --blue: #42a5ff;
-  --teal: #32d6c0;
-  --border: #26374e;
+  --bg:#0b1120;
+  --panel:#121d30;
+  --panel2:#18263b;
+  --text:#f3f7fc;
+  --muted:#a6b4c8;
+  --blue:#42a5ff;
+  --teal:#32d6c0;
+  --border:#26374e;
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html { scroll-behavior: smooth; }
-
+* {box-sizing:border-box;margin:0;padding:0}
+html {scroll-behavior:smooth}
 body {
-  font-family: Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
+  font-family:Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
 }
-
-a { color: inherit; text-decoration: none; }
-
+a {color:inherit;text-decoration:none}
 header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: rgba(11,17,32,.96);
-  border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(12px);
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(11,17,32,.97);
+  border-bottom:1px solid var(--border);
 }
-
 .nav {
-  max-width: 1150px;
-  margin: auto;
-  padding: 17px 22px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  max-width:1150px;
+  margin:auto;
+  padding:17px 22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
 }
-
-.logo {
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-.logo span { color: var(--teal); }
-
+.logo {font-size:20px;font-weight:800;letter-spacing:1px}
+.logo span {color:var(--teal)}
 .nav-links {
-  display: flex;
-  gap: 25px;
-  color: var(--muted);
-  font-size: 14px;
+  display:flex;
+  gap:25px;
+  color:var(--muted);
+  font-size:14px;
 }
-
-.nav-links a:hover { color: var(--teal); }
-
+.nav-links a:hover {color:var(--teal)}
 .hero {
-  max-width: 1150px;
-  margin: auto;
-  padding: 85px 22px;
-  display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  align-items: center;
-  gap: 45px;
+  max-width:1150px;
+  margin:auto;
+  padding:85px 22px;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  align-items:center;
+  gap:45px;
 }
-
 .tag {
-  display: inline-block;
-  padding: 7px 13px;
-  border: 1px solid #245b67;
-  border-radius: 30px;
-  color: var(--teal);
-  background: #102b34;
-  font-size: 12px;
-  margin-bottom: 22px;
+  display:inline-block;
+  padding:7px 13px;
+  border:1px solid #245b67;
+  border-radius:30px;
+  color:var(--teal);
+  background:#102b34;
+  font-size:12px;
+  margin-bottom:22px;
 }
-
 .hero h1 {
-  font-size: clamp(38px, 6vw, 66px);
-  line-height: 1.12;
-  margin-bottom: 22px;
+  font-size:clamp(38px,6vw,66px);
+  line-height:1.12;
+  margin-bottom:22px;
 }
-
-.hero h1 span {
-  color: var(--teal);
-}
-
+.hero h1 span {color:var(--teal)}
 .hero p {
-  max-width: 540px;
-  color: var(--muted);
-  font-size: 17px;
-  margin-bottom: 28px;
+  max-width:540px;
+  color:var(--muted);
+  font-size:17px;
+  margin-bottom:28px;
 }
-
 .btn {
-  display: inline-block;
-  background: linear-gradient(110deg, #168fc8, #18bcae);
-  padding: 13px 23px;
-  border-radius: 7px;
-  color: #061522;
-  font-weight: 700;
-  margin-right: 10px;
+  display:inline-block;
+  background:linear-gradient(110deg,#168fc8,#18bcae);
+  padding:13px 23px;
+  border-radius:7px;
+  color:#061522;
+  font-weight:700;
+  margin:5px 8px 5px 0;
 }
-
 .btn-outline {
-  display: inline-block;
-  border: 1px solid var(--border);
-  padding: 12px 22px;
-  border-radius: 7px;
-  color: var(--text);
+  display:inline-block;
+  border:1px solid var(--border);
+  padding:12px 22px;
+  border-radius:7px;
 }
-
 .visual {
-  min-height: 340px;
-  border: 1px solid #28506a;
-  border-radius: 18px;
+  min-height:340px;
+  border:1px solid #28506a;
+  border-radius:18px;
   background:
-    radial-gradient(circle at 50% 40%, #164c65 0%, transparent 55%),
-    linear-gradient(145deg, #14243b, #0c1729);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
+    radial-gradient(circle at 50% 40%,#164c65 0%,transparent 55%),
+    linear-gradient(145deg,#14243b,#0c1729);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
 }
-
 .visual::before {
-  content: "";
-  position: absolute;
-  width: 280px;
-  height: 280px;
-  border: 1px solid #35c9d4;
-  transform: rotate(45deg);
-  opacity: .25;
+  content:"";
+  position:absolute;
+  width:280px;
+  height:280px;
+  border:1px solid #35c9d4;
+  transform:rotate(45deg);
+  opacity:.25;
 }
-
 .building {
-  width: 175px;
-  height: 210px;
-  position: relative;
-  border: 2px solid var(--teal);
-  background: repeating-linear-gradient(
-    0deg,
-    transparent 0 39px,
-    #39d5c5 40px 42px
+  width:175px;
+  height:210px;
+  position:relative;
+  border:2px solid var(--teal);
+  background:repeating-linear-gradient(
+    0deg,transparent 0 39px,#39d5c5 40px 42px
   );
-  box-shadow: 0 0 35px #20c6bd55;
-  transform: perspective(450px) rotateY(-20deg) skewY(-3deg);
+  box-shadow:0 0 35px #20c6bd55;
+  transform:perspective(450px) rotateY(-20deg) skewY(-3deg);
 }
-
 .building::before {
-  content: "";
-  position: absolute;
-  top: -19px;
-  left: 12px;
-  width: 100%;
-  height: 17px;
-  background: #236f83;
-  transform: skewX(-45deg);
+  content:"";
+  position:absolute;
+  top:-19px;
+  left:12px;
+  width:100%;
+  height:17px;
+  background:#236f83;
+  transform:skewX(-45deg);
 }
-
 .building::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 35px;
-  width: 2px;
-  height: 100%;
-  background: var(--teal);
-  box-shadow: 48px 0 var(--teal), 96px 0 var(--teal);
+  content:"";
+  position:absolute;
+  top:0;
+  left:35px;
+  width:2px;
+  height:100%;
+  background:var(--teal);
+  box-shadow:48px 0 var(--teal),96px 0 var(--teal);
 }
-
 .visual-label {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: var(--teal);
-  font-size: 12px;
-  letter-spacing: 2px;
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  color:var(--teal);
+  font-size:12px;
+  letter-spacing:2px;
 }
-
 .section {
-  max-width: 1150px;
-  padding: 65px 22px;
-  margin: auto;
+  max-width:1150px;
+  padding:65px 22px;
+  margin:auto;
 }
-
-.section-heading {
-  margin-bottom: 30px;
-}
-
-.section-heading h2 {
-  font-size: 30px;
-  margin-bottom: 7px;
-}
-
-.section-heading p { color: var(--muted); }
-
+.section-heading {margin-bottom:30px}
+.section-heading h2 {font-size:30px;margin-bottom:7px}
+.section-heading p {color:var(--muted)}
 .cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 17px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:17px;
 }
-
 .card {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 24px 19px;
-  transition: .2s;
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:24px 19px;
+  transition:.2s;
 }
-
 .card:hover {
-  transform: translateY(-5px);
-  border-color: var(--teal);
+  transform:translateY(-5px);
+  border-color:var(--teal);
 }
-
-.card-icon {
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-.card h3 { margin-bottom: 9px; font-size: 18px; }
-
-.card p {
-  color: var(--muted);
-  font-size: 14px;
-}
-
+.card-icon {font-size:28px;margin-bottom:15px}
+.card h3 {margin-bottom:9px;font-size:18px}
+.card p {color:var(--muted);font-size:14px}
 .card a {
-  display: inline-block;
-  color: var(--teal);
-  font-size: 13px;
-  margin-top: 17px;
+  display:inline-block;
+  color:var(--teal);
+  font-size:13px;
+  margin-top:17px;
 }
-
+.video-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+}
+.video-card {
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:13px;
+  overflow:hidden;
+}
+.video-frame {
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  background:#000;
+}
+.video-frame iframe {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+.video-info {padding:18px}
+.video-info h3 {font-size:17px;margin-bottom:7px}
+.video-info p {font-size:14px;color:var(--muted)}
+.video-info a {
+  display:inline-block;
+  color:var(--teal);
+  margin-top:12px;
+  font-size:14px;
+}
 .feature {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  padding: 30px;
-  border-radius: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  background:var(--panel);
+  border:1px solid var(--border);
+  padding:30px;
+  border-radius:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
 }
-
-.feature p {
-  color: var(--muted);
-  margin-top: 8px;
-}
-
+.feature p {color:var(--muted);margin-top:8px}
 .about {
-  background: linear-gradient(120deg, #11253b, #102b35);
-  border: 1px solid #244a5a;
-  border-radius: 15px;
-  padding: 35px;
+  background:linear-gradient(120deg,#11253b,#102b35);
+  border:1px solid #244a5a;
+  border-radius:15px;
+  padding:35px;
 }
-
 .about p {
-  color: var(--muted);
-  max-width: 750px;
-  margin-top: 12px;
+  color:var(--muted);
+  max-width:750px;
+  margin-top:12px;
 }
-
 footer {
-  border-top: 1px solid var(--border);
-  padding: 30px 22px;
-  text-align: center;
-  color: var(--muted);
-  font-size: 13px;
+  border-top:1px solid var(--border);
+  padding:30px 22px;
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
 }
-
-footer strong { color: var(--teal); }
-
-@media(max-width: 760px) {
-  .nav {
-    flex-direction: column;
-    gap: 12px;
-  }
-
+footer strong {color:var(--teal)}
+@media(max-width:760px) {
+  .nav {flex-direction:column;gap:12px}
   .nav-links {
-    gap: 17px;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap:17px;
+    flex-wrap:wrap;
+    justify-content:center;
   }
-
   .hero {
-    grid-template-columns: 1fr;
-    padding: 60px 22px;
-    text-align: center;
+    grid-template-columns:1fr;
+    padding:60px 22px;
+    text-align:center;
   }
-
-  .hero p { margin-left: auto; margin-right: auto; }
-
-  .visual { min-height: 270px; }
-
-  .cards { grid-template-columns: repeat(2, 1fr); }
-
-  .feature {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  .hero p {margin-left:auto;margin-right:auto}
+  .visual {min-height:270px}
+  .cards {grid-template-columns:repeat(2,1fr)}
+  .video-grid {grid-template-columns:1fr}
+  .feature {flex-direction:column;align-items:flex-start}
 }
-
-@media(max-width: 390px) {
-  .cards { grid-template-columns: 1fr; }
-  .nav-links { gap: 12px; font-size: 13px; }
+@media(max-width:390px) {
+  .cards {grid-template-columns:1fr}
+  .nav-links {gap:12px;font-size:13px}
 }
 </style>
 </head>
 
 <body>
-
 <header>
   <nav class="nav">
     <a href="#home" class="logo">BIM <span>IN MINUTES.</span></a>
@@ -344,7 +295,6 @@ footer strong { color: var(--teal); }
 </header>
 
 <main>
-
 <section class="hero" id="home">
   <div>
     <div class="tag">BUILDING INFORMATION MODELLING</div>
@@ -357,7 +307,6 @@ footer strong { color: var(--teal); }
     <a href="#learn" class="btn">Explore Learning</a>
     <a href="#videos" class="btn-outline">Watch Videos</a>
   </div>
-
   <div class="visual">
     <div class="building"></div>
     <div class="visual-label">DIGITAL CONSTRUCTION / BIM</div>
@@ -369,7 +318,6 @@ footer strong { color: var(--teal); }
     <h2>Explore the BIM World</h2>
     <p>Learn essential skills and discover new technologies.</p>
   </div>
-
   <div class="cards">
     <div class="card">
       <div class="card-icon">🏢</div>
@@ -377,21 +325,18 @@ footer strong { color: var(--teal); }
       <p>Understand BIM concepts, processes, LOD and industry standards.</p>
       <a href="#about">Explore →</a>
     </div>
-
     <div class="card">
       <div class="card-icon">📐</div>
       <h3>Revit Tutorials</h3>
       <p>Discover modelling techniques, families and practical workflows.</p>
       <a href="#videos">Explore →</a>
     </div>
-
     <div class="card">
       <div class="card-icon">⚙️</div>
       <h3>BIM Automation</h3>
       <p>Learn Dynamo, productivity tools and workflow automation.</p>
       <a href="#videos">Explore →</a>
     </div>
-
     <div class="card">
       <div class="card-icon">🏗️</div>
       <h3>Industry Insights</h3>
@@ -404,15 +349,89 @@ footer strong { color: var(--teal); }
 <section class="section" id="videos">
   <div class="section-heading">
     <h2>Learn Through Videos</h2>
-    <p>Simple explanations. Practical knowledge. Better workflows.</p>
+    <p>Watch practical BIM and Revit tutorials from BIM in Minutes.</p>
   </div>
 
+  <div class="video-grid">
+
+    <article class="video-card">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/kI6vMuFdNrs"
+          title="BIM Roles Explained in 5 Minutes"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-info">
+        <h3>BIM Roles Explained in 5 Minutes</h3>
+        <p>Understand different roles and career paths in the BIM industry.</p>
+        <a href="https://youtu.be/kI6vMuFdNrs" target="_blank" rel="noopener">Watch on YouTube →</a>
+      </div>
+    </article>
+
+    <article class="video-card">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/z-0BTFEuPHY"
+          title="Curved Glass Roof in Revit Using Massing"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-info">
+        <h3>Curved Glass Roof in Revit Using Massing</h3>
+        <p>Explore a practical Revit modelling workflow.</p>
+        <a href="https://youtu.be/z-0BTFEuPHY" target="_blank" rel="noopener">Watch on YouTube →</a>
+      </div>
+    </article>
+
+    <article class="video-card">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/WIXS54n47dI"
+          title="Revit Parametric Isolated Footing Family"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-info">
+        <h3>Revit Parametric Isolated Footing Family</h3>
+        <p>Explore a structural Revit family with column and PCC.</p>
+        <a href="https://youtu.be/WIXS54n47dI" target="_blank" rel="noopener">Watch on YouTube →</a>
+      </div>
+    </article>
+
+  </div>
+
+  <div style="text-align:center;margin-top:30px">
+    <a class="btn"
+       href="https://youtube.com/@biminminutes"
+       target="_blank"
+       rel="noopener">
+       Visit BIM in Minutes on YouTube →
+    </a>
+  </div>
+</section>
+
+<section class="section">
   <div class="feature">
     <div>
-      <h3>BIM in Minutes on YouTube</h3>
-      <p>Explore video tutorials and learn something new about BIM.</p>
+      <h3>Learn something new about BIM.</h3>
+      <p>Follow BIM in Minutes for more tutorials and learning content.</p>
     </div>
-    <a class="btn" href="https://www.youtube.com/" target="_blank" rel="noopener">Visit YouTube</a>
+    <a class="btn"
+       href="https://youtube.com/@biminminutes"
+       target="_blank"
+       rel="noopener">
+       Subscribe on YouTube
+    </a>
   </div>
 </section>
 
@@ -423,12 +442,11 @@ footer strong { color: var(--teal); }
       BIM in Minutes is a learning initiative focused on
       Building Information Modelling, Autodesk Revit,
       digital construction and technology. Our aim is to
-      simplify complex topics through short, practical
-      and easy-to-understand content.
+      simplify complex topics through practical and
+      easy-to-understand content.
     </p>
   </div>
 </section>
-
 </main>
 
 <footer>
@@ -436,6 +454,5 @@ footer strong { color: var(--teal); }
   <p>Learn. Explore. Build Better.</p>
   <p>© 2026 BIM in Minutes. All rights reserved.</p>
 </footer>
-
 </body>
 </html>
