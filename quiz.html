@@ -36,35 +36,29 @@ header {
   border-bottom:1px solid var(--border);
 }
 .nav {
-  max-width:1150px;
+  max-width:1100px;
   margin:auto;
-  padding:14px 22px;
+  padding:10px 22px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:20px;
+}
+.header-back {
+  display:inline-flex;
+  align-items:center;
+  color:var(--muted);
+  font-size:14px;
 }
 .logo {
   display:flex;
   align-items:center;
 }
 .logo img {
-  width:48px;
-  height:48px;
+  width:42px;
+  height:42px;
   object-fit:contain;
   border-radius:50%;
 }
-nav {
-  display:flex;
-  align-items:center;
-  gap:25px;
-  flex-wrap:wrap;
-}
-nav a {
-  color:var(--muted);
-  font-size:14px;
-}
-nav a:hover {color:var(--teal)}
 .container {
   max-width:1100px;
   margin:auto;
@@ -262,21 +256,17 @@ footer strong {color:var(--text)}
 
 <header>
   <div class="nav">
+    <a class="header-back" href="index.html">← Back</a>
+
     <a class="logo" href="index.html" aria-label="BIM in Minutes Home">
       <img src="1772914820819_Original.jpeg" alt="BIM in Minutes Logo">
     </a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="index.html#learn">Explore</a>
-      <a href="index.html#videos">Videos</a>
-      <a href="index.html#about">About</a>
-    </nav>
   </div>
 </header>
 
 <main class="container">
 
-  <a class="back-link" href="index.html">← Back to Home</a>
+  
 
   <section class="page-heading">
     <div class="eyebrow">LEARN · PLAY · DISCOVER</div>
