@@ -1,0 +1,496 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interview Preparation | BIM in Minutes</title>
+
+<style>
+:root {
+  --bg:#0b1120;
+  --panel:#121d30;
+  --panel2:#18263b;
+  --text:#f3f7fc;
+  --muted:#a6b4c8;
+  --blue:#42a5ff;
+  --teal:#32d6c0;
+  --border:#26374e;
+}
+
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+}
+
+header {
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(11,17,32,.18);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(38,55,78,.25);
+}
+
+.nav {
+  max-width:1100px;
+  margin:auto;
+  padding:10px 22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.header-back {
+  color:var(--muted);
+  text-decoration:none;
+  font-size:14px;
+}
+
+.logo img {
+  width:42px;
+  height:42px;
+  object-fit:contain;
+  border-radius:50%;
+}
+
+.container {
+  max-width:1100px;
+  margin:auto;
+  padding:45px 22px 65px;
+}
+
+.hero {
+  text-align:center;
+  margin-bottom:42px;
+}
+
+.tag {
+  display:inline-block;
+  color:var(--teal);
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:1.5px;
+  margin-bottom:12px;
+}
+
+h1 {
+  font-size:clamp(30px,5vw,43px);
+  line-height:1.2;
+  margin-bottom:13px;
+}
+
+.hero p {
+  max-width:620px;
+  margin:auto;
+  color:var(--muted);
+  font-size:16px;
+}
+
+.section {
+  margin-top:38px;
+}
+
+.section-heading {
+  margin-bottom:18px;
+}
+
+.section-heading h2 {
+  font-size:22px;
+  margin-bottom:5px;
+}
+
+.section-heading p {
+  color:var(--muted);
+  font-size:14px;
+}
+
+.subject-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.subject-card {
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:15px;
+  padding:23px;
+  cursor:pointer;
+  transition:.2s ease;
+}
+
+.subject-card:hover {
+  border-color:var(--teal);
+  transform:translateY(-3px);
+}
+
+.subject-icon {
+  width:45px;
+  height:45px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  background:var(--panel2);
+  color:var(--teal);
+  font-size:22px;
+  margin-bottom:15px;
+}
+
+.subject-card h3 {
+  font-size:18px;
+  margin-bottom:7px;
+}
+
+.subject-card p {
+  color:var(--muted);
+  font-size:13px;
+  min-height:42px;
+}
+
+.card-link {
+  display:block;
+  color:var(--teal);
+  font-size:13px;
+  font-weight:bold;
+  margin-top:15px;
+}
+
+.selection-panel {
+  display:none;
+  margin-top:25px;
+  padding:23px;
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:15px;
+}
+
+.selection-panel.active {
+  display:block;
+}
+
+.selection-panel h3 {
+  font-size:20px;
+  margin-bottom:5px;
+}
+
+.selection-panel > p {
+  color:var(--muted);
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+.level-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+
+.level-card {
+  background:var(--panel2);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:17px;
+  cursor:pointer;
+  color:var(--text);
+  text-align:left;
+  font:inherit;
+  transition:.2s ease;
+}
+
+.level-card:hover {
+  border-color:var(--blue);
+}
+
+.level-card strong {
+  display:block;
+  font-size:16px;
+}
+
+.level-card span {
+  display:block;
+  color:var(--muted);
+  font-size:13px;
+  margin-top:5px;
+}
+
+.level-card small {
+  display:block;
+  color:var(--teal);
+  font-size:12px;
+  margin-top:12px;
+}
+
+.special-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+}
+
+.special-card {
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:13px;
+  padding:18px;
+  cursor:pointer;
+  transition:.2s ease;
+}
+
+.special-card:hover {
+  border-color:var(--teal);
+  transform:translateY(-2px);
+}
+
+.special-card h3 {
+  font-size:15px;
+  margin-bottom:7px;
+}
+
+.special-card p {
+  font-size:12px;
+  color:var(--muted);
+}
+
+.special-card span {
+  display:block;
+  color:var(--teal);
+  font-size:12px;
+  margin-top:12px;
+  font-weight:bold;
+}
+
+.notice {
+  display:none;
+  margin-top:18px;
+  padding:15px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:var(--panel2);
+  color:var(--muted);
+  font-size:14px;
+}
+
+.notice.active {
+  display:block;
+}
+
+footer {
+  border-top:1px solid var(--border);
+  padding:22px;
+  text-align:center;
+  color:var(--muted);
+  font-size:12px;
+}
+
+@media(max-width:760px) {
+  .subject-grid {
+    grid-template-columns:1fr;
+  }
+
+  .subject-card {
+    padding:19px;
+  }
+
+  .subject-card p {
+    min-height:0;
+  }
+
+  .special-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:390px) {
+  .container {
+    padding:35px 16px 50px;
+  }
+
+  .level-grid {
+    grid-template-columns:1fr;
+  }
+
+  .special-grid {
+    grid-template-columns:1fr;
+  }
+
+  .hero p {
+    font-size:14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <a class="header-back" href="index.html">← Back</a>
+    <a class="logo" href="index.html" aria-label="BIM in Minutes Home">
+      <img src="1772914820819_Original.jpeg" alt="BIM in Minutes Logo">
+    </a>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <span class="tag">LEARN · PRACTICE · IMPROVE</span>
+    <h1>Interview Preparation</h1>
+    <p>
+      Build your confidence, strengthen your technical knowledge
+      and get ready for your next professional challenge.
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>Choose Your Subject</h2>
+      <p>Select a subject to explore its interview challenges.</p>
+    </div>
+
+    <div class="subject-grid">
+
+      <div class="subject-card" onclick="showLevels('Revit Architecture')">
+        <div class="subject-icon">⌂</div>
+        <h3>Revit Architecture</h3>
+        <p>Explore architectural modelling, documentation and Revit workflows.</p>
+        <span class="card-link">Explore Challenges →</span>
+      </div>
+
+      <div class="subject-card" onclick="showLevels('Revit Structure')">
+        <div class="subject-icon">▦</div>
+        <h3>Revit Structure</h3>
+        <p>Test your knowledge of structural modelling and documentation.</p>
+        <span class="card-link">Explore Challenges →</span>
+      </div>
+
+      <div class="subject-card" onclick="showLevels('BIM Fundamentals')">
+        <div class="subject-icon">◇</div>
+        <h3>BIM Fundamentals</h3>
+        <p>Understand BIM concepts, terminology, standards and processes.</p>
+        <span class="card-link">Explore Challenges →</span>
+      </div>
+
+    </div>
+
+    <div class="selection-panel" id="levelPanel">
+      <h3 id="selectedSubject">Select Difficulty</h3>
+      <p>Choose your challenge level.</p>
+
+      <div class="level-grid">
+        <button class="level-card" onclick="showNotice('Beginner')">
+          <strong>Beginner</strong>
+          <span>Build your foundation.</span>
+          <small>20 Questions →</small>
+        </button>
+
+        <button class="level-card" onclick="showNotice('Intermediate')">
+          <strong>Intermediate</strong>
+          <span>Strengthen your knowledge.</span>
+          <small>20 Questions →</small>
+        </button>
+
+        <button class="level-card" onclick="showNotice('Advanced')">
+          <strong>Advanced</strong>
+          <span>Challenge your expertise.</span>
+          <small>20 Questions →</small>
+        </button>
+      </div>
+
+      <div class="notice" id="levelNotice">
+        The question bank for this challenge is being prepared.
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>Specialised BIM Topics</h2>
+      <p>Explore focused challenges on important BIM concepts and workflows.</p>
+    </div>
+
+    <div class="special-grid">
+
+      <div class="special-card" onclick="showSpecial('BIM Coordination')">
+        <h3>BIM Coordination</h3>
+        <p>Coordination workflows and model management.</p>
+        <span>Explore Topic →</span>
+      </div>
+
+      <div class="special-card" onclick="showSpecial('Clash Detection')">
+        <h3>Clash Detection</h3>
+        <p>Clash identification, review and resolution.</p>
+        <span>Explore Topic →</span>
+      </div>
+
+      <div class="special-card" onclick="showSpecial('BIM Execution Plan')">
+        <h3>BIM Execution Plan</h3>
+        <p>BEP requirements, planning and responsibilities.</p>
+        <span>Explore Topic →</span>
+      </div>
+
+      <div class="special-card" onclick="showSpecial('ISO 19650')">
+        <h3>ISO 19650</h3>
+        <p>BIM information management standards.</p>
+        <span>Explore Topic →</span>
+      </div>
+
+    </div>
+
+    <div class="notice" id="specialNotice">
+      The question bank for this topic is being prepared.
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  BIM IN MINUTES · Learn. Explore. Build Better.
+</footer>
+
+<script>
+function showLevels(subject) {
+  document.getElementById("selectedSubject").textContent = subject;
+  document.getElementById("levelPanel").classList.add("active");
+  document.getElementById("levelNotice").classList.remove("active");
+  document.getElementById("specialNotice").classList.remove("active");
+
+  document.getElementById("levelPanel").scrollIntoView({
+    behavior:"smooth",
+    block:"nearest"
+  });
+}
+
+function showNotice(level) {
+  const notice = document.getElementById("levelNotice");
+  notice.textContent = level +
+    " challenge selected. The question bank is being prepared.";
+  notice.classList.add("active");
+}
+
+function showSpecial(topic) {
+  const notice = document.getElementById("specialNotice");
+  notice.textContent = topic +
+    " challenge selected. The question bank is being prepared.";
+  notice.classList.add("active");
+  document.getElementById("levelPanel").classList.remove("active");
+
+  notice.scrollIntoView({
+    behavior:"smooth",
+    block:"nearest"
+  });
+}
+</script>
+
+</body>
+</html>
