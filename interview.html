@@ -189,7 +189,24 @@ h1 {
   font-size:14px;
   margin-bottom:18px;
 }
+.panel-title-row {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:5px;
+}
 
+.question-count {
+  color:var(--teal);
+  background:rgba(50,214,192,.10);
+  border:1px solid rgba(50,214,192,.3);
+  border-radius:20px;
+  padding:5px 12px;
+  font-size:12px;
+  font-weight:bold;
+  white-space:nowrap;
+}
 .level-grid {
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
@@ -296,7 +313,9 @@ footer {
   .subject-grid {
     grid-template-columns:1fr;
   }
-
+  .level-grid {
+    grid-template-columns:1fr;
+  }
   .subject-card {
     padding:19px;
   }
@@ -384,26 +403,29 @@ footer {
     </div>
 
     <div class="selection-panel" id="levelPanel">
-      <h3 id="selectedSubject">Select Difficulty</h3>
+      <div class="panel-title-row">
+  <h3 id="selectedSubject">Select Difficulty</h3>
+  <span class="question-count">20 Questions</span>
+</div>
       <p>Choose your challenge level.</p>
 
       <div class="level-grid">
         <button class="level-card" onclick="showNotice('Beginner')">
           <strong>Beginner</strong>
           <span>Build your foundation.</span>
-          <small>20 Questions →</small>
+          
         </button>
 
         <button class="level-card" onclick="showNotice('Intermediate')">
           <strong>Intermediate</strong>
           <span>Strengthen your knowledge.</span>
-          <small>20 Questions →</small>
+          
         </button>
 
         <button class="level-card" onclick="showNotice('Advanced')">
           <strong>Advanced</strong>
           <span>Challenge your expertise.</span>
-          <small>20 Questions →</small>
+          
         </button>
       </div>
 
