@@ -605,19 +605,19 @@ footer {
       <p>Choose your challenge level.</p>
 
       <div class="level-grid">
-        <button class="level-card" onclick="showNotice('Beginner')">
+        <button class="level-card" onclick="startChallenge('Beginner')">
           <strong>Beginner</strong>
           <span>Build your foundation.</span>
           
         </button>
 
-        <button class="level-card" onclick="showNotice('Intermediate')">
+        <button class="level-card" onclick="startChallenge('Intermediate')">
           <strong>Intermediate</strong>
           <span>Strengthen your knowledge.</span>
           
         </button>
 
-        <button class="level-card" onclick="showNotice('Advanced')">
+        <button class="level-card" onclick="startChallenge('Advanced')"
           <strong>Advanced</strong>
           <span>Challenge your expertise.</span>
           
@@ -739,6 +739,38 @@ function showNotice(level) {
   notice.textContent = level +
     " challenge selected. The question bank is being prepared.";
   notice.classList.add("active");
+}
+
+function startChallenge(level) {
+  const subject = document.getElementById("selectedSubject").textContent;
+
+  document.getElementById("challengeSubject").textContent = subject;
+  document.getElementById("challengeDifficulty").textContent = level;
+
+  document.getElementById("levelNotice").classList.remove("active");
+  document.getElementById("challengeScreen").hidden = false;
+
+  document.querySelector("header").hidden = true;
+  document.querySelector("main").hidden = true;
+  document.querySelector("footer").hidden = true;
+
+  document.getElementById("challengeScreen").scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
+}
+
+function exitChallenge() {
+  document.getElementById("challengeScreen").hidden = true;
+
+  document.querySelector("header").hidden = false;
+  document.querySelector("main").hidden = false;
+  document.querySelector("footer").hidden = false;
+
+  document.getElementById("levelPanel").scrollIntoView({
+    behavior:"smooth",
+    block:"center"
+  });
 }
 
 function showSpecial(topic) {
