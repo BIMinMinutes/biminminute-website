@@ -480,6 +480,52 @@ footer {
   BIM IN MINUTES · Learn. Explore. Build Better.
 </footer>
 
+  
+<section id="challengeScreen" class="challenge-screen" hidden>
+
+  <div class="challenge-topbar">
+    <button type="button" onclick="exitChallenge()">← Exit Challenge</button>
+    <span id="challengeSubject">Revit Architecture</span>
+    <span id="challengeDifficulty">Beginner</span>
+  </div>
+
+  <div class="challenge-progress">
+    <div class="progress-info">
+      <span id="questionProgress">Question 1 of 20</span>
+      <span id="progressPercent">5%</span>
+    </div>
+    <div class="progress-track">
+      <div id="progressFill"></div>
+    </div>
+  </div>
+
+  <div class="challenge-question-card">
+    <p class="question-label">QUESTION <span id="questionNumber">01</span></p>
+    <h2 id="questionText">Your question will appear here.</h2>
+
+    <div id="answerOptions" class="answer-options">
+      <button type="button" class="answer-option">A. Option A</button>
+      <button type="button" class="answer-option">B. Option B</button>
+      <button type="button" class="answer-option">C. Option C</button>
+      <button type="button" class="answer-option">D. Option D</button>
+    </div>
+
+    <div id="answerFeedback" hidden>
+      <h3 id="feedbackTitle"></h3>
+      <p id="explanationText"></p>
+    </div>
+
+    <button type="button" id="submitAnswerBtn">
+      Submit Answer
+    </button>
+
+    <button type="button" id="nextQuestionBtn" hidden>
+      Next Question →
+    </button>
+  </div>
+
+</section>
+
 <script>
 function showLevels(subject) {
   document.getElementById("selectedSubject").textContent = subject;
