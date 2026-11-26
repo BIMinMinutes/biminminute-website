@@ -1,0 +1,3460 @@
+{
+  "bank_name": "BIM in Minutes Interview Preparation",
+  "version": "1.3",
+  "status": "Batch 1 Approved; Batch 2 User Approved (detailed technical review documented for Advanced section only)",
+  "challenge_settings": {
+    "questions_per_challenge": 20,
+    "selection": "one subject and one difficulty",
+    "difficulty_levels": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+    "scoring": {
+      "correct": 1,
+      "incorrect": 0,
+      "negative_marking": false
+    },
+    "feedback": "After each submitted answer",
+    "allow_change_before_submission": true,
+    "allow_skip": false
+  },
+  "subjects": [
+    "Revit Architecture",
+    "Revit Structure",
+    "BIM Fundamentals"
+  ],
+  "batches": [
+    {
+      "subject": "Revit Architecture",
+      "batch": 1,
+      "question_id_start": "RA-001",
+      "question_id_end": "RA-050",
+      "difficulty_distribution": {
+        "Beginner": 20,
+        "Intermediate": 20,
+        "Advanced": 10
+      },
+      "status": "Approved",
+      "approved_by_user": true,
+      "approval_date": "2026-11-25"
+    },
+    {
+      "subject": "Revit Architecture",
+      "batch": 2,
+      "question_id_start": "RA-051",
+      "question_id_end": "RA-100",
+      "difficulty_distribution": {
+        "Beginner": 20,
+        "Intermediate": 20,
+        "Advanced": 10
+      },
+      "status": "User Approved – detailed technical review partial",
+      "approved_by_user": true,
+      "approval_date": "2026-11-26",
+      "quality_note": "Explicitly approved by the user on 2026-11-26. Detailed technical review is documented for Advanced questions RA-091–RA-100 only. RA-051–RA-090 were not separately marked technically reviewed; this distinction is retained for traceability."
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "RA-001",
+      "subject": "Revit Architecture",
+      "topic": "Revit Fundamentals",
+      "difficulty": "Beginner",
+      "question": "Which statement best describes the role of Revit in an architectural project?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It replaces all structural design calculations"
+        },
+        {
+          "key": "B",
+          "text": "It creates and manages information-rich building models and associated documentation"
+        },
+        {
+          "key": "C",
+          "text": "It is primarily a project payment and contract system"
+        },
+        {
+          "key": "D",
+          "text": "It is used only to produce presentation renderings"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "It creates and manages information-rich building models and associated documentation",
+      "explanation": "Revit supports the creation and management of building information models and coordinated project documentation. It does not replace discipline-specific engineering calculations or commercial project systems.",
+      "source_name": "Autodesk Revit Help – System Families and Settings Reference",
+      "source_url": "https://help.autodesk.com/cloudhelp/2026/ENU/Revit-Model/files/GUID-AC640604-C495-44A3-A640-8A9E7C2CCC63.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-002",
+      "subject": "Revit Architecture",
+      "topic": "Revit Fundamentals",
+      "difficulty": "Beginner",
+      "question": "Which Revit family category includes walls, floors, roofs and ceilings as built-in project family types?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Annotation families"
+        },
+        {
+          "key": "B",
+          "text": "System families"
+        },
+        {
+          "key": "C",
+          "text": "Detail item families"
+        },
+        {
+          "key": "D",
+          "text": "In-place families"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "System families",
+      "explanation": "Walls, floors, roofs and ceilings are examples of system families. They are defined and managed within the project environment rather than loaded as standalone RFA files in the same way as loadable families.",
+      "source_name": "Autodesk Revit Help – System Families and Settings Reference",
+      "source_url": "https://help.autodesk.com/cloudhelp/2026/ENU/Revit-Model/files/GUID-AC640604-C495-44A3-A640-8A9E7C2CCC63.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-003",
+      "subject": "Revit Architecture",
+      "topic": "Revit Fundamentals",
+      "difficulty": "Beginner",
+      "question": "What is the main purpose of a Revit project template?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To convert all linked files into native Revit elements"
+        },
+        {
+          "key": "B",
+          "text": "To provide predefined project settings, views, families and standards"
+        },
+        {
+          "key": "C",
+          "text": "To automatically design the building"
+        },
+        {
+          "key": "D",
+          "text": "To lock the model against editing"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "To provide predefined project settings, views, families and standards",
+      "explanation": "A project template provides a starting environment that can include settings, view templates, families, project views, schedules, sheets and standards.",
+      "source_name": "Autodesk Revit Help – Project Templates",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Customize/files/GUID-4C16B54A-7ADA-4DEB-A278-C199B1BC4207.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-004",
+      "subject": "Revit Architecture",
+      "topic": "Revit Fundamentals",
+      "difficulty": "Beginner",
+      "question": "Which statement about a Revit system family is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It is defined within a project and includes categories such as walls and floors"
+        },
+        {
+          "key": "B",
+          "text": "It is a type of linked CAD file"
+        },
+        {
+          "key": "C",
+          "text": "It can only be created in a separate RFA file"
+        },
+        {
+          "key": "D",
+          "text": "It is used only for 2D annotation"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "It is defined within a project and includes categories such as walls and floors",
+      "explanation": "System families are built into Revit project environments. Examples include walls, floors, roofs, ceilings and stairs.",
+      "source_name": "Autodesk Revit Help – System Families and Settings Reference",
+      "source_url": "https://help.autodesk.com/cloudhelp/2026/ENU/Revit-Model/files/GUID-AC640604-C495-44A3-A640-8A9E7C2CCC63.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-005",
+      "subject": "Revit Architecture",
+      "topic": "Revit Fundamentals",
+      "difficulty": "Beginner",
+      "question": "Where are project-specific custom parameters commonly displayed when assigned to elements?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Properties palette or Type Properties dialog"
+        },
+        {
+          "key": "B",
+          "text": "Only in the Render dialog"
+        },
+        {
+          "key": "C",
+          "text": "Only in the sheet title block"
+        },
+        {
+          "key": "D",
+          "text": "Only in the Project Browser search box"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Properties palette or Type Properties dialog",
+      "explanation": "Custom parameters assigned to project elements appear in the Properties palette or Type Properties dialog under their configured parameter group.",
+      "source_name": "Autodesk Revit Help – About Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/RevitLT-Model/files/GUID-AEBA08ED-BDF1-4E59-825A-BF9E4A871CF5.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-006",
+      "subject": "Revit Architecture",
+      "topic": "Levels, Grids and Setup",
+      "difficulty": "Beginner",
+      "question": "What is the primary purpose of a level in an architectural Revit model?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To establish a vertical reference elevation"
+        },
+        {
+          "key": "B",
+          "text": "To define a material pattern"
+        },
+        {
+          "key": "C",
+          "text": "To control the project browser order"
+        },
+        {
+          "key": "D",
+          "text": "To set the view scale"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "To establish a vertical reference elevation",
+      "explanation": "Levels establish vertical datum elevations and can be used as references for building elements and views.",
+      "source_name": "Autodesk Revit Help – System Families and Settings Reference",
+      "source_url": "https://help.autodesk.com/cloudhelp/2026/ENU/Revit-Model/files/GUID-AC640604-C495-44A3-A640-8A9E7C2CCC63.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-007",
+      "subject": "Revit Architecture",
+      "topic": "Levels, Grids and Setup",
+      "difficulty": "Beginner",
+      "question": "What is the main purpose of grid lines in a building model?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To provide a reference framework for locating and coordinating building elements"
+        },
+        {
+          "key": "B",
+          "text": "To control rendering quality"
+        },
+        {
+          "key": "C",
+          "text": "To create room finishes"
+        },
+        {
+          "key": "D",
+          "text": "To define wall material layers"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "To provide a reference framework for locating and coordinating building elements",
+      "explanation": "Grids provide a reference framework commonly used to locate structural columns and coordinate building layouts between disciplines.",
+      "source_name": "Autodesk Revit Help – System Families and Settings Reference",
+      "source_url": "https://help.autodesk.com/cloudhelp/2026/ENU/Revit-Model/files/GUID-AC640604-C495-44A3-A640-8A9E7C2CCC63.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-008",
+      "subject": "Revit Architecture",
+      "topic": "Levels, Grids and Setup",
+      "difficulty": "Beginner",
+      "question": "Which project setup item can a template predefine to promote consistent measurement display?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Door swing direction"
+        },
+        {
+          "key": "B",
+          "text": "Project units"
+        },
+        {
+          "key": "C",
+          "text": "Rendering exposure"
+        },
+        {
+          "key": "D",
+          "text": "Workset ownership"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Project units",
+      "explanation": "Project templates can include project settings such as units, line styles, fill patterns and other standards, helping teams start with consistent settings.",
+      "source_name": "Autodesk Revit Help – Project Template Settings",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Customize/files/GUID-C63C8425-A2A6-4318-BF84-EE3E67029EC3.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-009",
+      "subject": "Revit Architecture",
+      "topic": "Levels, Grids and Setup",
+      "difficulty": "Beginner",
+      "question": "What is a practical reason to establish project standards before modelling begins?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To improve consistency in views, annotations, families and documentation"
+        },
+        {
+          "key": "B",
+          "text": "To remove the need for model coordination"
+        },
+        {
+          "key": "C",
+          "text": "To ensure all elements use one family type"
+        },
+        {
+          "key": "D",
+          "text": "To prevent all model changes"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "To improve consistency in views, annotations, families and documentation",
+      "explanation": "Templates and predefined standards help teams maintain consistent project settings, views, families and documentation practices.",
+      "source_name": "Autodesk Revit Help – Project Templates",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Customize/files/GUID-4C16B54A-7ADA-4DEB-A278-C199B1BC4207.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-010",
+      "subject": "Revit Architecture",
+      "topic": "Walls, Floors, Roofs and Ceilings",
+      "difficulty": "Beginner",
+      "question": "A Basic Wall in Revit is best described as which of the following?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A linked DWG layer"
+        },
+        {
+          "key": "B",
+          "text": "A system family type representing a wall variety"
+        },
+        {
+          "key": "C",
+          "text": "A schedule-only object"
+        },
+        {
+          "key": "D",
+          "text": "A view-specific annotation"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "A system family type representing a wall variety",
+      "explanation": "Basic Walls are system family types that represent varieties of wall function, composition and thickness.",
+      "source_name": "Autodesk Revit Help – Walls",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-ArchDesign/files/GUID-9A9F7D00-A6A1-4E17-8C74-0965FDA5E007.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-011",
+      "subject": "Revit Architecture",
+      "topic": "Walls, Floors, Roofs and Ceilings",
+      "difficulty": "Beginner",
+      "question": "What generally defines the layered construction of a compound wall?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The sheet viewport title"
+        },
+        {
+          "key": "B",
+          "text": "The view crop boundary"
+        },
+        {
+          "key": "C",
+          "text": "The wall type's compound structure"
+        },
+        {
+          "key": "D",
+          "text": "The wall instance mark"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "The wall type's compound structure",
+      "explanation": "The compound structure is part of the wall type definition and contains layer functions, materials and thicknesses.",
+      "source_name": "Autodesk Revit Help – Walls",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-ArchDesign/files/GUID-9A9F7D00-A6A1-4E17-8C74-0965FDA5E007.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-012",
+      "subject": "Revit Architecture",
+      "topic": "Walls, Floors, Roofs and Ceilings",
+      "difficulty": "Beginner",
+      "question": "Which Revit system family category is used to model horizontal building slabs?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Text notes"
+        },
+        {
+          "key": "B",
+          "text": "Detail lines"
+        },
+        {
+          "key": "C",
+          "text": "Floors"
+        },
+        {
+          "key": "D",
+          "text": "Viewports"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "Floors",
+      "explanation": "Floors are a Revit system family category used for building floor elements and related slab geometry.",
+      "source_name": "Autodesk Revit Help – System Families and Settings Reference",
+      "source_url": "https://help.autodesk.com/cloudhelp/2026/ENU/Revit-Model/files/GUID-AC640604-C495-44A3-A640-8A9E7C2CCC63.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-013",
+      "subject": "Revit Architecture",
+      "topic": "Walls, Floors, Roofs and Ceilings",
+      "difficulty": "Beginner",
+      "question": "Which Revit system family category is commonly used to model overhead building ceiling elements?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rooms"
+        },
+        {
+          "key": "B",
+          "text": "Schedules"
+        },
+        {
+          "key": "C",
+          "text": "Grids"
+        },
+        {
+          "key": "D",
+          "text": "Ceilings"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Ceilings",
+      "explanation": "Ceilings are a system family category in Revit and are commonly documented in reflected ceiling plan views.",
+      "source_name": "Autodesk Revit Help – System Families and Settings Reference",
+      "source_url": "https://help.autodesk.com/cloudhelp/2026/ENU/Revit-Model/files/GUID-AC640604-C495-44A3-A640-8A9E7C2CCC63.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-014",
+      "subject": "Revit Architecture",
+      "topic": "Walls, Floors, Roofs and Ceilings",
+      "difficulty": "Beginner",
+      "question": "Which tool can create a clean join between two host elements that share a common face, such as a wall and floor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Array"
+        },
+        {
+          "key": "B",
+          "text": "Align"
+        },
+        {
+          "key": "C",
+          "text": "Mirror"
+        },
+        {
+          "key": "D",
+          "text": "Join Geometry"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Join Geometry",
+      "explanation": "Join Geometry creates clean joins between supported host elements that share a common face. The join can affect visible edges and which element cuts the other.",
+      "source_name": "Autodesk Revit Help – Join Geometry",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Model/files/GUID-F3D6884F-F1E3-471B-81FB-ECE93D9C2671.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-015",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Beginner",
+      "question": "What is a family parameter used for?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To set the sheet issue date"
+        },
+        {
+          "key": "B",
+          "text": "To control the computer display resolution"
+        },
+        {
+          "key": "C",
+          "text": "To control variable values or behaviour within a family"
+        },
+        {
+          "key": "D",
+          "text": "To rename the project file"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "To control variable values or behaviour within a family",
+      "explanation": "Family parameters control variable values in a family, such as dimensions or materials, and can support flexible family types.",
+      "source_name": "Autodesk Revit Help – Create Family Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Customize/files/GUID-921F7A15-D191-4F75-8243-4989C482E253.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-016",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Beginner",
+      "question": "What is the usual effect of changing a type parameter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It changes only the currently selected instance"
+        },
+        {
+          "key": "B",
+          "text": "It changes the project units"
+        },
+        {
+          "key": "C",
+          "text": "It changes all instances using that family type"
+        },
+        {
+          "key": "D",
+          "text": "It changes every family in the project"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "It changes all instances using that family type",
+      "explanation": "A type parameter is common to all instances of the same type. Changing it affects those instances, so duplicate a type when only a subset should change.",
+      "source_name": "Autodesk Revit Help – About Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/RevitLT-Model/files/GUID-AEBA08ED-BDF1-4E59-825A-BF9E4A871CF5.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-017",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Beginner",
+      "question": "What is the usual effect of changing an instance parameter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It changes the selected element instance"
+        },
+        {
+          "key": "B",
+          "text": "It changes all types in the family"
+        },
+        {
+          "key": "C",
+          "text": "It changes the view template"
+        },
+        {
+          "key": "D",
+          "text": "It changes all projects using the family"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "It changes the selected element instance",
+      "explanation": "Instance parameters store values separately for each placed element, allowing instances of the same type to have different values.",
+      "source_name": "Autodesk Revit Help – About Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/RevitLT-Model/files/GUID-AEBA08ED-BDF1-4E59-825A-BF9E4A871CF5.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-018",
+      "subject": "Revit Architecture",
+      "topic": "Views and Graphics",
+      "difficulty": "Beginner",
+      "question": "What does View Range control in a plan view?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The geographic location of the project"
+        },
+        {
+          "key": "B",
+          "text": "The horizontal planes that govern visibility and display of elements"
+        },
+        {
+          "key": "C",
+          "text": "The list of sheets in the project"
+        },
+        {
+          "key": "D",
+          "text": "The wall type's compound layers"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "The horizontal planes that govern visibility and display of elements",
+      "explanation": "View Range defines horizontal planes such as Top, Cut Plane, Bottom and View Depth that control how elements display in a plan view.",
+      "source_name": "Autodesk Revit Help – About the View Range",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-58711292-AB78-4C8F-BAA1-0855DDB518BF.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-019",
+      "subject": "Revit Architecture",
+      "topic": "Views and Graphics",
+      "difficulty": "Beginner",
+      "question": "What is the main purpose of a view template?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To store a reusable collection of view properties and apply consistent settings"
+        },
+        {
+          "key": "B",
+          "text": "To merge two Revit projects"
+        },
+        {
+          "key": "C",
+          "text": "To assign ownership of worksets"
+        },
+        {
+          "key": "D",
+          "text": "To create new family geometry"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "To store a reusable collection of view properties and apply consistent settings",
+      "explanation": "A view template stores view properties such as scale, discipline, detail level and visibility settings, helping standardise view presentation.",
+      "source_name": "Autodesk Revit Help – About View Templates",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Customize/files/GUID-C3B5FB82-3247-48F6-82F0-73011A0F8027.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-020",
+      "subject": "Revit Architecture",
+      "topic": "Schedules and Documentation",
+      "difficulty": "Beginner",
+      "question": "What is a Revit schedule?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A tabular view of information extracted from model elements"
+        },
+        {
+          "key": "B",
+          "text": "A 3D view with hidden lines"
+        },
+        {
+          "key": "C",
+          "text": "A static screenshot of the model"
+        },
+        {
+          "key": "D",
+          "text": "A project coordinate file"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "A tabular view of information extracted from model elements",
+      "explanation": "A schedule displays tabular information extracted from project elements. It can update when model properties change.",
+      "source_name": "Autodesk Revit Help – Schedules",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-F50D6FF4-859E-43A2-A2F6-81C84A1BA0EB.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-021",
+      "subject": "Revit Architecture",
+      "topic": "Schedules and Documentation",
+      "difficulty": "Intermediate",
+      "question": "A door schedule groups identical doors into one row, but you need each placed door shown separately. Which setting should you review?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Phase Filter"
+        },
+        {
+          "key": "B",
+          "text": "View Depth"
+        },
+        {
+          "key": "C",
+          "text": "Project North"
+        },
+        {
+          "key": "D",
+          "text": "Itemize every instance"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Itemize every instance",
+      "explanation": "The Itemize every instance setting controls whether each instance receives its own row or matching elements are grouped according to schedule sorting and grouping settings.",
+      "source_name": "Autodesk Revit Help – Schedules",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-F50D6FF4-859E-43A2-A2F6-81C84A1BA0EB.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-022",
+      "subject": "Revit Architecture",
+      "topic": "Schedules and Documentation",
+      "difficulty": "Intermediate",
+      "question": "You need to report the types and quantities of materials used within model elements. Which schedule type is designed for this purpose?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sheet List"
+        },
+        {
+          "key": "B",
+          "text": "Revision Schedule"
+        },
+        {
+          "key": "C",
+          "text": "Material Takeoff"
+        },
+        {
+          "key": "D",
+          "text": "View List"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "Material Takeoff",
+      "explanation": "A Material Takeoff schedule reports material information such as material type, quantity and cost for supported model categories.",
+      "source_name": "Autodesk Revit Help – Create a Material Takeoff Schedule",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-9165A53A-C6B8-48EB-8F22-38DFDCD6496B.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-023",
+      "subject": "Revit Architecture",
+      "topic": "Schedules and Documentation",
+      "difficulty": "Intermediate",
+      "question": "A schedule must include a custom field that exists in the model but is not currently displayed. What should you use to add it?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The View Range dialog"
+        },
+        {
+          "key": "B",
+          "text": "The Design Options dialog"
+        },
+        {
+          "key": "C",
+          "text": "The Worksets dialog"
+        },
+        {
+          "key": "D",
+          "text": "The Fields tab in Schedule Properties"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "The Fields tab in Schedule Properties",
+      "explanation": "The Fields tab in Schedule Properties is used to select available fields and add them to the schedule.",
+      "source_name": "Autodesk Revit Help – Select Fields for a Schedule",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-F7D48874-EDB0-454B-8E5B-19C551A78978.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-024",
+      "subject": "Revit Architecture",
+      "topic": "Schedules and Documentation",
+      "difficulty": "Intermediate",
+      "question": "A schedule should show a calculated value derived from other fields. Which capability should you investigate?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Project Browser organisation"
+        },
+        {
+          "key": "B",
+          "text": "Calculated values in schedules"
+        },
+        {
+          "key": "C",
+          "text": "Linked view display"
+        },
+        {
+          "key": "D",
+          "text": "Scope boxes"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Calculated values in schedules",
+      "explanation": "Revit schedules support calculated values and formulas for deriving information from available fields, subject to supported data types and formula rules.",
+      "source_name": "Autodesk Revit Help – Schedules",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-F50D6FF4-859E-43A2-A2F6-81C84A1BA0EB.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-025",
+      "subject": "Revit Architecture",
+      "topic": "Views and Graphics",
+      "difficulty": "Intermediate",
+      "question": "A wall-mounted element is missing from a floor plan and its elevation appears outside the plan's vertical display limits. Which setting should be checked first?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Material Browser"
+        },
+        {
+          "key": "B",
+          "text": "Sheet Number"
+        },
+        {
+          "key": "C",
+          "text": "View Range"
+        },
+        {
+          "key": "D",
+          "text": "Project Information"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "View Range",
+      "explanation": "View Range controls the vertical planes used to determine visibility and cut display in a plan view. The element's elevation and category visibility should also be checked.",
+      "source_name": "Autodesk Revit Help – About the View Range",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-58711292-AB78-4C8F-BAA1-0855DDB518BF.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-026",
+      "subject": "Revit Architecture",
+      "topic": "Views and Graphics",
+      "difficulty": "Intermediate",
+      "question": "A view template is assigned to several views and linked to them. What happens when a controlled property in the template is changed?",
+      "options": [
+        {
+          "key": "A",
+          "text": "All model geometry is resized"
+        },
+        {
+          "key": "B",
+          "text": "The linked views receive the updated template property"
+        },
+        {
+          "key": "C",
+          "text": "The linked views become drafting views"
+        },
+        {
+          "key": "D",
+          "text": "Only the template name changes"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "The linked views receive the updated template property",
+      "explanation": "When a view is assigned a view template, changes to properties controlled by that template are applied to linked views. The template can also be applied without maintaining a link.",
+      "source_name": "Autodesk Revit Help – About View Templates",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Customize/files/GUID-C3B5FB82-3247-48F6-82F0-73011A0F8027.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-027",
+      "subject": "Revit Architecture",
+      "topic": "Views and Graphics",
+      "difficulty": "Intermediate",
+      "question": "You need to colour-code walls with a particular fire-rating parameter in selected views. Which feature is suitable?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Family category rename"
+        },
+        {
+          "key": "B",
+          "text": "Rule-based view filter"
+        },
+        {
+          "key": "C",
+          "text": "Sheet list"
+        },
+        {
+          "key": "D",
+          "text": "Project units"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Rule-based view filter",
+      "explanation": "Rule-based view filters identify elements using category and parameter values, then apply visibility or graphic overrides in views.",
+      "source_name": "Autodesk Revit Help – About View Filters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-87A63C25-99A6-428D-A0FF-112E4FC9C3D7.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-028",
+      "subject": "Revit Architecture",
+      "topic": "Views and Graphics",
+      "difficulty": "Intermediate",
+      "question": "An RCP has a different view direction from a standard floor plan. In which direction does its view range look?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Up from the cut plane"
+        },
+        {
+          "key": "B",
+          "text": "Horizontally along Project North"
+        },
+        {
+          "key": "C",
+          "text": "Down from the cut plane only"
+        },
+        {
+          "key": "D",
+          "text": "Toward True North only"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Up from the cut plane",
+      "explanation": "A reflected ceiling plan looks upward from its cut plane. Its view range behaviour differs from a standard floor plan.",
+      "source_name": "Autodesk Revit Help – About the View Range",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-58711292-AB78-4C8F-BAA1-0855DDB518BF.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-029",
+      "subject": "Revit Architecture",
+      "topic": "Walls, Floors, Roofs and Ceilings",
+      "difficulty": "Intermediate",
+      "question": "A wall must follow the underside profile of a sloped roof. Which workflow is designed to make the wall conform to the target element?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Change the view scale"
+        },
+        {
+          "key": "B",
+          "text": "Create a material takeoff"
+        },
+        {
+          "key": "C",
+          "text": "Add a schedule filter"
+        },
+        {
+          "key": "D",
+          "text": "Attach Top/Base"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Attach Top/Base",
+      "explanation": "Attach Top/Base allows a wall's top or base to attach to another element such as a roof, floor, ceiling or reference plane so its boundary can follow that element.",
+      "source_name": "Autodesk Revit Help – Attach Walls to Other Elements",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-ArchDesign/files/GUID-ED60CE62-B955-45E9-9D7D-00F1552D858C.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-030",
+      "subject": "Revit Architecture",
+      "topic": "Walls, Floors, Roofs and Ceilings",
+      "difficulty": "Intermediate",
+      "question": "You join a wall and floor using Join Geometry. What is one effect the command can have in the project?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It changes the project coordinate system"
+        },
+        {
+          "key": "B",
+          "text": "It creates a new level"
+        },
+        {
+          "key": "C",
+          "text": "It can remove the visible edge and determine which joined element cuts the other"
+        },
+        {
+          "key": "D",
+          "text": "It converts the wall into a curtain wall"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "It can remove the visible edge and determine which joined element cuts the other",
+      "explanation": "Join Geometry creates a clean join between supported elements. In a project, the first and second picked elements can affect the cut relationship and visible result.",
+      "source_name": "Autodesk Revit Help – Join Geometry",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Model/files/GUID-F3D6884F-F1E3-471B-81FB-ECE93D9C2671.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-031",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Intermediate",
+      "question": "A custom parameter must be used consistently in multiple families or projects and be available for tagging and scheduling. Which parameter definition is appropriate?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Temporary dimension"
+        },
+        {
+          "key": "B",
+          "text": "View title parameter"
+        },
+        {
+          "key": "C",
+          "text": "Shared parameter"
+        },
+        {
+          "key": "D",
+          "text": "Material asset"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "Shared parameter",
+      "explanation": "Shared parameter definitions are stored externally and can be used in multiple families and projects. They can be tagged and scheduled when loaded and configured appropriately in the relevant families and project.",
+      "source_name": "Autodesk Revit Help – About Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/RevitLT-Model/files/GUID-AEBA08ED-BDF1-4E59-825A-BF9E4A871CF5.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-032",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Intermediate",
+      "question": "A family contains a separately authored component family inside it. What is this arrangement called?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Design option"
+        },
+        {
+          "key": "B",
+          "text": "Nested family"
+        },
+        {
+          "key": "C",
+          "text": "Linked model"
+        },
+        {
+          "key": "D",
+          "text": "Dependent view"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Nested family",
+      "explanation": "A family loaded into another family is a nested family. Parameters can be associated between host and nested families where appropriate.",
+      "source_name": "Autodesk Revit Help – Create Family Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Customize/files/GUID-921F7A15-D191-4F75-8243-4989C482E253.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-033",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Advanced",
+      "question": "You need a family parameter to drive another parameter's value using conditional logic. Which feature should you use?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A view filter"
+        },
+        {
+          "key": "B",
+          "text": "A shared coordinate"
+        },
+        {
+          "key": "C",
+          "text": "A family formula"
+        },
+        {
+          "key": "D",
+          "text": "A sheet revision"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "A family formula",
+      "explanation": "Family formulas can drive parameter values using expressions and conditional logic, provided the formula syntax and parameter data types are compatible.",
+      "source_name": "Autodesk Revit Help – Create Family Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Customize/files/GUID-921F7A15-D191-4F75-8243-4989C482E253.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-034",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Intermediate",
+      "question": "A family dimension must change when a reference plane moves. What should the family author establish?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A sheet list"
+        },
+        {
+          "key": "B",
+          "text": "A dimension with an appropriate labelled parameter and constraint relationship"
+        },
+        {
+          "key": "C",
+          "text": "A material takeoff"
+        },
+        {
+          "key": "D",
+          "text": "A project phase filter"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "A dimension with an appropriate labelled parameter and constraint relationship",
+      "explanation": "Parametric family behaviour relies on reference planes, dimensions, labels and constraints that define how geometry responds to parameter changes.",
+      "source_name": "Autodesk Revit Help – Create Family Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Customize/files/GUID-921F7A15-D191-4F75-8243-4989C482E253.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-035",
+      "subject": "Revit Architecture",
+      "topic": "Worksharing and Coordination",
+      "difficulty": "Intermediate",
+      "question": "What is the primary purpose of worksharing in Revit?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Allow multiple team members to work on the same project model concurrently"
+        },
+        {
+          "key": "B",
+          "text": "Prevent users from creating local files"
+        },
+        {
+          "key": "C",
+          "text": "Automatically resolve every clash"
+        },
+        {
+          "key": "D",
+          "text": "Convert all linked models into one family"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Allow multiple team members to work on the same project model concurrently",
+      "explanation": "Worksharing allows multiple team members to work on the same project model simultaneously through a central model and local working copies.",
+      "source_name": "Autodesk Revit Help – About Worksharing",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Collaborate/files/GUID-0FC44807-DF06-4516-905A-4100281AC486.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-036",
+      "subject": "Revit Architecture",
+      "topic": "Worksharing and Coordination",
+      "difficulty": "Intermediate",
+      "question": "In a workshared project, what is a workset?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A type of view template"
+        },
+        {
+          "key": "B",
+          "text": "A material library"
+        },
+        {
+          "key": "C",
+          "text": "A collection of elements in the project"
+        },
+        {
+          "key": "D",
+          "text": "A sheet revision sequence"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "A collection of elements in the project",
+      "explanation": "A workset is a collection of elements in a workshared project. Worksets can support team organisation and visibility management.",
+      "source_name": "Autodesk Revit Help – About Worksharing",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Collaborate/files/GUID-0FC44807-DF06-4516-905A-4100281AC486.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-037",
+      "subject": "Revit Architecture",
+      "topic": "Worksharing and Coordination",
+      "difficulty": "Intermediate",
+      "question": "A project contains separate architectural and structural Revit source files that must remain independently maintained but visible together. Which workflow is appropriate?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Explode the structural model into drafting lines"
+        },
+        {
+          "key": "B",
+          "text": "Copy every element manually into the architectural file"
+        },
+        {
+          "key": "C",
+          "text": "Insert a rendered image"
+        },
+        {
+          "key": "D",
+          "text": "Link the structural Revit model into the architectural model"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Link the structural Revit model into the architectural model",
+      "explanation": "Linked Revit models allow separate discipline models to be brought together for context and coordination while retaining their separate source files.",
+      "source_name": "Autodesk Revit Help – Workflow: Collaborating with Revit Models",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Collaborate/files/GUID-32A10F90-31F8-49CB-A63A-7060B3C99A99.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-038",
+      "subject": "Revit Architecture",
+      "topic": "Worksharing and Coordination",
+      "difficulty": "Intermediate",
+      "question": "When coordinating levels and grids copied from a linked discipline model, which tool can track selected changes to monitored elements?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Render"
+        },
+        {
+          "key": "B",
+          "text": "Paint"
+        },
+        {
+          "key": "C",
+          "text": "Split Face"
+        },
+        {
+          "key": "D",
+          "text": "Copy/Monitor"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Copy/Monitor",
+      "explanation": "Copy/Monitor can copy and monitor supported elements from linked models, including levels and grids, so changes can be reviewed.",
+      "source_name": "Autodesk Revit Help – Copy Elements for Monitoring",
+      "source_url": "https://help.autodesk.com/cloudhelp/2021/ENU/Revit-Collaborate/files/GUID-39C9571F-6A78-4B15-9EC5-FFB47CAD17F7.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-039",
+      "subject": "Revit Architecture",
+      "topic": "Worksharing and Coordination",
+      "difficulty": "Intermediate",
+      "question": "A team wants linked models to maintain a common position relative to the project site. Which coordinate concept should be established?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Schedule sorting"
+        },
+        {
+          "key": "B",
+          "text": "Family type naming"
+        },
+        {
+          "key": "C",
+          "text": "View scale"
+        },
+        {
+          "key": "D",
+          "text": "Shared coordinates"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Shared coordinates",
+      "explanation": "Shared coordinates establish the relative positions of multiple models and files in a coordinated project environment.",
+      "source_name": "Autodesk Revit Help – About Shared Coordinates",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Collaborate/files/GUID-B82147D6-7EAB-48AB-B0C3-3B160E2DCD17.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-040",
+      "subject": "Revit Architecture",
+      "topic": "Phasing and Design Options",
+      "difficulty": "Intermediate",
+      "question": "A renovation project needs separate views for existing, demolished and new construction. Which Revit capability is intended for this?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Material takeoffs only"
+        },
+        {
+          "key": "B",
+          "text": "Worksets only"
+        },
+        {
+          "key": "C",
+          "text": "View templates only"
+        },
+        {
+          "key": "D",
+          "text": "Phases and phase filters"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Phases and phase filters",
+      "explanation": "Element phase properties and view phase/phase-filter settings control how elements from different project phases are displayed.",
+      "source_name": "Autodesk Revit Help – View Properties (Phase and Phase Filter)",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-8BEBCEF0-CE2C-4635-8C7C-9D03503C0B79.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-041",
+      "subject": "Revit Architecture",
+      "topic": "Phasing and Design Options",
+      "difficulty": "Intermediate",
+      "question": "A project template must include view templates, loaded families, units and predefined views. Is this supported?",
+      "options": [
+        {
+          "key": "A",
+          "text": "No, templates cannot include project settings"
+        },
+        {
+          "key": "B",
+          "text": "No, templates can store only title blocks"
+        },
+        {
+          "key": "C",
+          "text": "Yes, these can be included in a project template"
+        },
+        {
+          "key": "D",
+          "text": "Yes, but only if the project is workshared"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "Yes, these can be included in a project template",
+      "explanation": "Project templates can include view templates, loaded families, project settings, geometry and project views to establish a consistent starting environment.",
+      "source_name": "Autodesk Revit Help – Project Templates",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Customize/files/GUID-4C16B54A-7ADA-4DEB-A278-C199B1BC4207.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-042",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Advanced",
+      "question": "A parametric family works at its default width but fails when flexed to its maximum width. What should be investigated first?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The project north angle"
+        },
+        {
+          "key": "B",
+          "text": "The sheet title block size"
+        },
+        {
+          "key": "C",
+          "text": "The project browser sorting order"
+        },
+        {
+          "key": "D",
+          "text": "Reference planes, labelled dimensions and constraint relationships"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Reference planes, labelled dimensions and constraint relationships",
+      "explanation": "Family flexing failures commonly arise from missing, conflicting or incorrectly applied constraints. Test parameter ranges and inspect the reference framework and labelled dimensions.",
+      "source_name": "Autodesk Revit Help – Create Family Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Customize/files/GUID-921F7A15-D191-4F75-8243-4989C482E253.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-043",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Advanced",
+      "question": "A nested component must be independently taggable and schedulable in the host project. Which family setting should generally be considered?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Set the host view to Wireframe"
+        },
+        {
+          "key": "B",
+          "text": "Mark the nested family as Shared"
+        },
+        {
+          "key": "C",
+          "text": "Change the project units"
+        },
+        {
+          "key": "D",
+          "text": "Assign a new phase to the host"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Mark the nested family as Shared",
+      "explanation": "A shared nested family can expose its instances for independent selection, tagging and scheduling in the host project, subject to category and schedule configuration.",
+      "source_name": "Autodesk Revit Help – About Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/RevitLT-Model/files/GUID-AEBA08ED-BDF1-4E59-825A-BF9E4A871CF5.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-044",
+      "subject": "Revit Architecture",
+      "topic": "Worksharing and Coordination",
+      "difficulty": "Advanced",
+      "question": "A building model and a site model must align using a common coordinate system while retaining their own internal coordinate frameworks. What is the appropriate strategy?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Manually move geometry independently in every view"
+        },
+        {
+          "key": "B",
+          "text": "Establish shared coordinates from an agreed authoritative model and coordinate the other files to it"
+        },
+        {
+          "key": "C",
+          "text": "Set all project units to metres"
+        },
+        {
+          "key": "D",
+          "text": "Use a view template to align the models"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Establish shared coordinates from an agreed authoritative model and coordinate the other files to it",
+      "explanation": "Shared coordinates establish the relative positions of linked files. Autodesk recommends deriving the shared coordinate system from one authoritative file and using acquire/publish workflows as appropriate.",
+      "source_name": "Autodesk Revit Help – About Shared Coordinates",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Collaborate/files/GUID-B82147D6-7EAB-48AB-B0C3-3B160E2DCD17.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-045",
+      "subject": "Revit Architecture",
+      "topic": "Worksharing and Coordination",
+      "difficulty": "Advanced",
+      "question": "A team member cannot edit an element because another user owns it. What is the appropriate collaborative response?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Delete the central model"
+        },
+        {
+          "key": "B",
+          "text": "Detach every link and overwrite the file"
+        },
+        {
+          "key": "C",
+          "text": "Coordinate with the owner and follow the project's borrowing/relinquish workflow"
+        },
+        {
+          "key": "D",
+          "text": "Change the element category"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "Coordinate with the owner and follow the project's borrowing/relinquish workflow",
+      "explanation": "Worksharing ownership and borrowing protect concurrent edits. Users should coordinate with the owner and use the supported request, relinquish and synchronisation processes rather than bypassing ownership.",
+      "source_name": "Autodesk Revit Help – About Worksharing",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Collaborate/files/GUID-0FC44807-DF06-4516-905A-4100281AC486.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-046",
+      "subject": "Revit Architecture",
+      "topic": "Views and Graphics",
+      "difficulty": "Advanced",
+      "question": "A linked model must display using the visibility and graphics of a selected view from the linked file. Which link display approach should be investigated?",
+      "options": [
+        {
+          "key": "A",
+          "text": "By Host View only"
+        },
+        {
+          "key": "B",
+          "text": "Material Takeoff"
+        },
+        {
+          "key": "C",
+          "text": "Project Units"
+        },
+        {
+          "key": "D",
+          "text": "By Linked View"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "By Linked View",
+      "explanation": "Revit link display settings can use a selected linked view to control how the linked model appears in the host view. The linked view must be appropriate for the coordination purpose.",
+      "source_name": "Autodesk Revit Help – Workflow: Collaborating with Revit Models",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Collaborate/files/GUID-32A10F90-31F8-49CB-A63A-7060B3C99A99.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-047",
+      "subject": "Revit Architecture",
+      "topic": "Phasing and Design Options",
+      "difficulty": "Advanced",
+      "question": "A demolished wall appears as existing in a renovation view. Which settings should be checked together first?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Only the wall's material appearance"
+        },
+        {
+          "key": "B",
+          "text": "Only the sheet number"
+        },
+        {
+          "key": "C",
+          "text": "Only the project browser order"
+        },
+        {
+          "key": "D",
+          "text": "The wall's Phase Created and Phase Demolished values, plus the view's Phase and Phase Filter"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "The wall's Phase Created and Phase Demolished values, plus the view's Phase and Phase Filter",
+      "explanation": "Phase graphics depend on both element phase properties and the view's phase and phase filter. An incorrect value in either place can produce unexpected display.",
+      "source_name": "Autodesk Revit Help – View Properties (Phase and Phase Filter)",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-8BEBCEF0-CE2C-4635-8C7C-9D03503C0B79.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-048",
+      "subject": "Revit Architecture",
+      "topic": "Walls, Floors, Roofs and Ceilings",
+      "difficulty": "Advanced",
+      "question": "At a complex wall/floor intersection, the visible join is incorrect. What is the most appropriate diagnostic sequence?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Inspect join geometry and join order, then verify the wall and floor geometry and constraints"
+        },
+        {
+          "key": "B",
+          "text": "Change the view title and scale"
+        },
+        {
+          "key": "C",
+          "text": "Change project units and recreate all sheets"
+        },
+        {
+          "key": "D",
+          "text": "Delete all grids and levels"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Inspect join geometry and join order, then verify the wall and floor geometry and constraints",
+      "explanation": "Join Geometry behaviour depends on the selected elements, geometry and join relationship. Inspect the actual model join and constraints rather than masking the issue with view graphics.",
+      "source_name": "Autodesk Revit Help – Join Geometry",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Model/files/GUID-F3D6884F-F1E3-471B-81FB-ECE93D9C2671.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-049",
+      "subject": "Revit Architecture",
+      "topic": "Schedules and Documentation",
+      "difficulty": "Advanced",
+      "question": "A material quantity report must break a compound wall into its constituent material layers. Which Revit schedule type is most suitable?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Material Takeoff"
+        },
+        {
+          "key": "B",
+          "text": "View List"
+        },
+        {
+          "key": "C",
+          "text": "Sheet List"
+        },
+        {
+          "key": "D",
+          "text": "Revision Schedule"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Material Takeoff",
+      "explanation": "Material Takeoff schedules report material-level information for supported elements and are suited to reporting material types and quantities within assemblies.",
+      "source_name": "Autodesk Revit Help – Create a Material Takeoff Schedule",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-9165A53A-C6B8-48EB-8F22-38DFDCD6496B.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-050",
+      "subject": "Revit Architecture",
+      "topic": "Worksharing and Coordination",
+      "difficulty": "Advanced",
+      "question": "A linked file has been updated, but the team cannot reload it in a workshared project because the link's workset is not editable. What should be checked?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Whether the workset containing the link is editable and available for the update"
+        },
+        {
+          "key": "B",
+          "text": "Whether the host model has a reflected ceiling plan"
+        },
+        {
+          "key": "C",
+          "text": "Whether the linked file uses the same title block"
+        },
+        {
+          "key": "D",
+          "text": "Whether the host project has a material takeoff"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Whether the workset containing the link is editable and available for the update",
+      "explanation": "In a workshared model, links are contained in worksets. The relevant workset must be editable for link reload operations that require it; teams should coordinate link management and synchronisation.",
+      "source_name": "Autodesk Revit Help – Workflow: Collaborating with Revit Models",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Collaborate/files/GUID-32A10F90-31F8-49CB-A63A-7060B3C99A99.htm",
+      "batch": 1,
+      "approval_status": "Approved",
+      "batch_status": "Approved"
+    },
+    {
+      "question_id": "RA-051",
+      "subject": "Revit Architecture",
+      "topic": "Rooms and Areas",
+      "difficulty": "Beginner",
+      "question": "In Revit, where can you normally place a Room element?",
+      "options": [
+        {
+          "key": "A",
+          "text": "In a drafting view"
+        },
+        {
+          "key": "B",
+          "text": "In a plan view"
+        },
+        {
+          "key": "C",
+          "text": "Directly on a sheet"
+        },
+        {
+          "key": "D",
+          "text": "Only in a 3D perspective view"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "In a plan view",
+      "explanation": "Rooms are placed from a plan view. They can then be tagged, scheduled and reviewed in other views where their visibility is enabled.",
+      "source_name": "Autodesk Revit Help – Rooms and Room Boundaries",
+      "source_url": "https://help.autodesk.com/cloudhelp/2027/ENU/Revit-ArchDesign/files/GUID-3D8B61D3-38C6-4B8F-97E1-797A05F5C5AD.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-052",
+      "subject": "Revit Architecture",
+      "topic": "Rooms and Areas",
+      "difficulty": "Beginner",
+      "question": "Which parameter on a wall or other supported element determines whether it can define a room boundary?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Area Computation Rule"
+        },
+        {
+          "key": "B",
+          "text": "Room Bounding"
+        },
+        {
+          "key": "C",
+          "text": "Boundary Location Override"
+        },
+        {
+          "key": "D",
+          "text": "Room Calculation Point"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Room Bounding",
+      "explanation": "The Room Bounding property determines whether a supported element participates in defining room boundaries.",
+      "source_name": "Autodesk Revit Help – Rooms and Room Boundaries",
+      "source_url": "https://help.autodesk.com/cloudhelp/2027/ENU/Revit-ArchDesign/files/GUID-3D8B61D3-38C6-4B8F-97E1-797A05F5C5AD.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-053",
+      "subject": "Revit Architecture",
+      "topic": "Rooms and Areas",
+      "difficulty": "Beginner",
+      "question": "What is the purpose of a Room Separation Line?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To define a level elevation"
+        },
+        {
+          "key": "B",
+          "text": "To split a wall into separate wall types"
+        },
+        {
+          "key": "C",
+          "text": "To divide a schedule into groups"
+        },
+        {
+          "key": "D",
+          "text": "To create a non-physical boundary between spaces"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "To create a non-physical boundary between spaces",
+      "explanation": "Room separation lines provide room boundaries where physical room-bounding elements do not form the required enclosure.",
+      "source_name": "Autodesk Revit Help – Room Boundaries",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-ArchDesign/files/GUID-C7338362-6D35-471B-90B0-6A893534FFE2.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-054",
+      "subject": "Revit Architecture",
+      "topic": "Rooms and Areas",
+      "difficulty": "Beginner",
+      "question": "Which information can a Room element report in its properties and schedule?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Room name and area"
+        },
+        {
+          "key": "B",
+          "text": "Only sheet number and view scale"
+        },
+        {
+          "key": "C",
+          "text": "Only family category and type mark"
+        },
+        {
+          "key": "D",
+          "text": "Only wall type and wall height"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Room name and area",
+      "explanation": "Room elements can report information such as name, number, area and other room properties, depending on the schedule fields used.",
+      "source_name": "Autodesk Revit Help – Rooms and Room Boundaries",
+      "source_url": "https://help.autodesk.com/cloudhelp/2027/ENU/Revit-ArchDesign/files/GUID-3D8B61D3-38C6-4B8F-97E1-797A05F5C5AD.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-055",
+      "subject": "Revit Architecture",
+      "topic": "Rooms and Areas",
+      "difficulty": "Beginner",
+      "question": "A room is placed in a plan but its area is not as expected. Which should be checked first?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The Project Browser grouping"
+        },
+        {
+          "key": "B",
+          "text": "Room boundaries and computation height"
+        },
+        {
+          "key": "C",
+          "text": "The view's rendering quality"
+        },
+        {
+          "key": "D",
+          "text": "The sheet title block family"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Room boundaries and computation height",
+      "explanation": "Room area is computed from room boundaries at a defined computation height. Boundary participation and height can affect the calculated area.",
+      "source_name": "Autodesk Revit Help – Rooms and Room Boundaries",
+      "source_url": "https://help.autodesk.com/cloudhelp/2027/ENU/Revit-ArchDesign/files/GUID-3D8B61D3-38C6-4B8F-97E1-797A05F5C5AD.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-056",
+      "subject": "Revit Architecture",
+      "topic": "Documentation and Sheets",
+      "difficulty": "Beginner",
+      "question": "Which Revit view is intended to contain placed views, schedules and title block information for issue?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Drafting view"
+        },
+        {
+          "key": "B",
+          "text": "Legend view"
+        },
+        {
+          "key": "C",
+          "text": "Area plan"
+        },
+        {
+          "key": "D",
+          "text": "Sheet"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Sheet",
+      "explanation": "A sheet is the presentation layout on which views, schedules and other supported items are placed for documentation.",
+      "source_name": "Autodesk Revit Help – Sheets",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-3F663CC2-A83E-409F-94F8-ACE7737AE59C.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-057",
+      "subject": "Revit Architecture",
+      "topic": "Documentation and Sheets",
+      "difficulty": "Beginner",
+      "question": "What does a viewport represent on a Revit sheet?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A family type catalogue"
+        },
+        {
+          "key": "B",
+          "text": "A placed view on the sheet"
+        },
+        {
+          "key": "C",
+          "text": "A crop region in the model"
+        },
+        {
+          "key": "D",
+          "text": "A workset boundary"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "A placed view on the sheet",
+      "explanation": "A viewport is the sheet representation of a placed view and provides controls such as its title and placement.",
+      "source_name": "Autodesk Revit Help – Project Browser and Sheet Viewports",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-GetStarted/files/GUID-C8D3E5A6-02A5-43A9-AFFC-D49DD27398B1.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-058",
+      "subject": "Revit Architecture",
+      "topic": "Documentation and Sheets",
+      "difficulty": "Beginner",
+      "question": "Which view type is most appropriate for drawing a 2D construction detail that is not directly modelled in 3D?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ceiling plan"
+        },
+        {
+          "key": "B",
+          "text": "Site plan"
+        },
+        {
+          "key": "C",
+          "text": "3D orthographic view"
+        },
+        {
+          "key": "D",
+          "text": "Drafting view"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Drafting view",
+      "explanation": "Drafting views are used to create detail drawings with 2D detail components, lines, text and dimensions independent of model geometry.",
+      "source_name": "Autodesk Revit Help – About Drafting Views",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-7B76A2EA-F1F4-484B-AA96-2E2E53B56E49.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-059",
+      "subject": "Revit Architecture",
+      "topic": "Documentation and Sheets",
+      "difficulty": "Beginner",
+      "question": "What is the main purpose of a legend view?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To show reusable symbols and explanations across sheets"
+        },
+        {
+          "key": "B",
+          "text": "To manage worksharing ownership"
+        },
+        {
+          "key": "C",
+          "text": "To create new wall compound structures"
+        },
+        {
+          "key": "D",
+          "text": "To control model coordinates"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "To show reusable symbols and explanations across sheets",
+      "explanation": "Legend views communicate symbols and graphic conventions and can be placed on multiple sheets.",
+      "source_name": "Autodesk Revit Help – About Legend Views",
+      "source_url": "https://help.autodesk.com/cloudhelp/2024/ENU/Revit-DocumentPresent/files/GUID-865B9B0C-D522-46C4-8E54-FBD32CE7A1CB.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-060",
+      "subject": "Revit Architecture",
+      "topic": "Materials and Graphics",
+      "difficulty": "Beginner",
+      "question": "Which Revit asset controls the physical appearance of a material in shaded or realistic views?",
+      "options": [
+        {
+          "key": "A",
+          "text": "View phase"
+        },
+        {
+          "key": "B",
+          "text": "Scope box"
+        },
+        {
+          "key": "C",
+          "text": "Room calculation point"
+        },
+        {
+          "key": "D",
+          "text": "Surface appearance asset"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Surface appearance asset",
+      "explanation": "A material's appearance asset controls its rendered or realistic visual appearance; other material properties govern physical and graphic behaviour.",
+      "source_name": "Autodesk Revit Help – About Appearance Assets",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Customize/files/GUID-6E3C9EF0-F657-4F79-90BD-A2FB88B0467D.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-061",
+      "subject": "Revit Architecture",
+      "topic": "Materials and Graphics",
+      "difficulty": "Beginner",
+      "question": "Which material property is primarily used to control how a material appears in shaded views?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Shading colour"
+        },
+        {
+          "key": "B",
+          "text": "Workset name"
+        },
+        {
+          "key": "C",
+          "text": "Room number"
+        },
+        {
+          "key": "D",
+          "text": "Key schedule key"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Shading colour",
+      "explanation": "The shading settings of a material affect its display in shaded visual styles, while appearance assets are used for realistic rendering.",
+      "source_name": "Autodesk Revit Help – Change the Graphics Properties of a Material",
+      "source_url": "https://help.autodesk.com/cloudhelp/2026/ENU/RevitLT-Customize/files/GUID-5DFA9F47-B6FF-4D79-A240-FA27BEA7C7AB.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-062",
+      "subject": "Revit Architecture",
+      "topic": "Model Organisation",
+      "difficulty": "Beginner",
+      "question": "What is the purpose of a model group in Revit?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To create a new level from selected walls"
+        },
+        {
+          "key": "B",
+          "text": "To replace all family types with one type"
+        },
+        {
+          "key": "C",
+          "text": "To treat a collection of elements as a reusable grouped arrangement"
+        },
+        {
+          "key": "D",
+          "text": "To combine separate RVT files into one file automatically"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "To treat a collection of elements as a reusable grouped arrangement",
+      "explanation": "Model groups allow collections of model elements to be grouped, copied and reused while maintaining their group relationship.",
+      "source_name": "Autodesk Revit Help – About Creating Groups",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Model/files/GUID-95485783-6446-408E-A3A2-28B82F497AFF.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-063",
+      "subject": "Revit Architecture",
+      "topic": "Model Organisation",
+      "difficulty": "Beginner",
+      "question": "Which tool helps you view and manage the hierarchy of levels, views, sheets and schedules in a project?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Design Options palette"
+        },
+        {
+          "key": "B",
+          "text": "Family Editor"
+        },
+        {
+          "key": "C",
+          "text": "Project Browser"
+        },
+        {
+          "key": "D",
+          "text": "Material Browser"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "Project Browser",
+      "explanation": "The Project Browser provides navigation and organisation for project views, sheets, schedules, families and related project content.",
+      "source_name": "Autodesk Revit Help – Project Browser",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-GetStarted/files/GUID-C8D3E5A6-02A5-43A9-AFFC-D49DD27398B1.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-064",
+      "subject": "Revit Architecture",
+      "topic": "Model Organisation",
+      "difficulty": "Beginner",
+      "question": "What is the purpose of a scope box?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To assign an element to a phase"
+        },
+        {
+          "key": "B",
+          "text": "To define the physical thickness of a wall"
+        },
+        {
+          "key": "C",
+          "text": "To control the extents of datum elements and compatible views"
+        },
+        {
+          "key": "D",
+          "text": "To set the room area computation height"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "To control the extents of datum elements and compatible views",
+      "explanation": "Scope boxes can control the extents of datum elements and can be assigned to views to coordinate their visible extents.",
+      "source_name": "Autodesk Revit Help – Create a Scope Box",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Model/files/GUID-3E75F88D-D212-43D4-8176-5B7F305B60F2.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-065",
+      "subject": "Revit Architecture",
+      "topic": "Model Organisation",
+      "difficulty": "Beginner",
+      "question": "Which view property determines the scale at which a plan or section is displayed?",
+      "options": [
+        {
+          "key": "A",
+          "text": "View Scale"
+        },
+        {
+          "key": "B",
+          "text": "Phase Filter"
+        },
+        {
+          "key": "C",
+          "text": "Detail Level"
+        },
+        {
+          "key": "D",
+          "text": "Discipline"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "View Scale",
+      "explanation": "View Scale controls the drawing scale of the view, affecting the relationship between model dimensions and their printed representation.",
+      "source_name": "Autodesk Revit Help – View Properties and Scale",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-58711292-AB78-4C8F-BAA1-0855DDB518BF.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-066",
+      "subject": "Revit Architecture",
+      "topic": "Families and Components",
+      "difficulty": "Beginner",
+      "question": "What is a type catalogue commonly used for when loading a family?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To store project coordinates"
+        },
+        {
+          "key": "B",
+          "text": "To select from a large set of predefined family types without loading every type"
+        },
+        {
+          "key": "C",
+          "text": "To replace shared parameters with project parameters"
+        },
+        {
+          "key": "D",
+          "text": "To create a sheet index automatically"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "To select from a large set of predefined family types without loading every type",
+      "explanation": "A type catalogue allows users to select required types from a family catalogue during loading, which can reduce unnecessary type loading.",
+      "source_name": "Autodesk Revit Help – Load a Family with a Type Catalog",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Model/files/GUID-5DB0797C-B0CA-4C3F-B72A-84176738AEC5.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-067",
+      "subject": "Revit Architecture",
+      "topic": "Families and Components",
+      "difficulty": "Beginner",
+      "question": "Which family category is commonly used for a reusable 2D symbol or annotation component?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Wall"
+        },
+        {
+          "key": "B",
+          "text": "Floor"
+        },
+        {
+          "key": "C",
+          "text": "Topography"
+        },
+        {
+          "key": "D",
+          "text": "Generic Annotation"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Generic Annotation",
+      "explanation": "Generic Annotation families are view-specific annotation components used for symbols and other 2D documentation content.",
+      "source_name": "Autodesk Revit Help – Families and Type Catalogues",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Model/files/GUID-5DB0797C-B0CA-4C3F-B72A-84176738AEC5.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-068",
+      "subject": "Revit Architecture",
+      "topic": "Families and Components",
+      "difficulty": "Beginner",
+      "question": "What is the main purpose of a profile family in Revit?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To store a project's shared coordinates"
+        },
+        {
+          "key": "B",
+          "text": "To create room separation boundaries"
+        },
+        {
+          "key": "C",
+          "text": "To define a 2D cross-sectional shape used by supported host or system elements"
+        },
+        {
+          "key": "D",
+          "text": "To define sheet numbering rules"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "To define a 2D cross-sectional shape used by supported host or system elements",
+      "explanation": "Profile families provide a 2D profile shape used by supported features such as sweeps, reveals, railings or other profile-driven elements.",
+      "source_name": "Autodesk Revit Help – Families and Type Catalogues",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Model/files/GUID-5DB0797C-B0CA-4C3F-B72A-84176738AEC5.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-069",
+      "subject": "Revit Architecture",
+      "topic": "Phasing",
+      "difficulty": "Beginner",
+      "question": "What does the Phase Created property identify for a model element?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The design option set in which the element is visible"
+        },
+        {
+          "key": "B",
+          "text": "The view template assigned to the element"
+        },
+        {
+          "key": "C",
+          "text": "The project phase in which the element is introduced"
+        },
+        {
+          "key": "D",
+          "text": "The workset that owns the element"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "The project phase in which the element is introduced",
+      "explanation": "Phase Created records the phase in which an element is introduced into the project timeline.",
+      "source_name": "Autodesk Revit Help – About Phase-Specific Rooms and Boundaries",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/ENU/Revit-ArchDesign/files/GUID-2D1748B4-D94B-4445-BF90-6C2FDFB4B86E.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-070",
+      "subject": "Revit Architecture",
+      "topic": "Phasing",
+      "difficulty": "Beginner",
+      "question": "Which view setting controls how elements from different phases are graphically displayed?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Phase Filter"
+        },
+        {
+          "key": "B",
+          "text": "View Scale"
+        },
+        {
+          "key": "C",
+          "text": "Discipline"
+        },
+        {
+          "key": "D",
+          "text": "Detail Level"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Phase Filter",
+      "explanation": "A phase filter controls the visibility and graphic treatment of elements based on their phase status in the view.",
+      "source_name": "Autodesk Revit Help – About Phase-Specific Rooms and Boundaries",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/ENU/Revit-ArchDesign/files/GUID-2D1748B4-D94B-4445-BF90-6C2FDFB4B86E.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-071",
+      "subject": "Revit Architecture",
+      "topic": "Rooms and Areas",
+      "difficulty": "Intermediate",
+      "question": "Rooms placed in an architectural host model must use walls from a linked Revit model as boundaries. What must be enabled on the linked model type?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Room Bounding"
+        },
+        {
+          "key": "B",
+          "text": "Shared Levels"
+        },
+        {
+          "key": "C",
+          "text": "Phase Created Override"
+        },
+        {
+          "key": "D",
+          "text": "Reference Label"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Room Bounding",
+      "explanation": "The linked model's Room Bounding type property must be enabled for its qualifying elements to participate in host-model room boundaries.",
+      "source_name": "Autodesk Revit Help – Use Room Boundaries in a Linked Model",
+      "source_url": "https://help.autodesk.com/cloudhelp/2027/ENU/RevitLT-ArchDes/files/GUID-64AF3A48-C121-4F26-B0BF-CDF93B389F75.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-072",
+      "subject": "Revit Architecture",
+      "topic": "Rooms and Areas",
+      "difficulty": "Intermediate",
+      "question": "A room is bounded by a linked model, but the host model does not detect the linked walls. What is the most direct correction?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Enable Room Bounding for the linked model type"
+        },
+        {
+          "key": "B",
+          "text": "Copy all linked walls into the host model"
+        },
+        {
+          "key": "C",
+          "text": "Change the linked model's workset visibility to editable"
+        },
+        {
+          "key": "D",
+          "text": "Bind the linked model into the host"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Enable Room Bounding for the linked model type",
+      "explanation": "By default, a linked model is not necessarily used for room boundaries. Enabling Room Bounding on the link type allows the host to use qualifying linked elements.",
+      "source_name": "Autodesk Revit Help – Use Room Boundaries in a Linked Model",
+      "source_url": "https://help.autodesk.com/cloudhelp/2027/ENU/RevitLT-ArchDes/files/GUID-64AF3A48-C121-4F26-B0BF-CDF93B389F75.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-073",
+      "subject": "Revit Architecture",
+      "topic": "Rooms and Areas",
+      "difficulty": "Intermediate",
+      "question": "A room's perimeter is unexpectedly measured at an unsuitable height in a building with sloped walls. Which setting can influence the calculation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cut pattern foreground"
+        },
+        {
+          "key": "B",
+          "text": "Room computation height"
+        },
+        {
+          "key": "C",
+          "text": "View depth"
+        },
+        {
+          "key": "D",
+          "text": "Schedule grand totals"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Room computation height",
+      "explanation": "Revit measures room perimeter at the defined computation height. Adjusting it can improve area calculations in spaces with sloped or atypical boundaries.",
+      "source_name": "Autodesk Revit Help – Rooms and Room Boundaries",
+      "source_url": "https://help.autodesk.com/cloudhelp/2027/ENU/Revit-ArchDesign/files/GUID-3D8B61D3-38C6-4B8F-97E1-797A05F5C5AD.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-074",
+      "subject": "Revit Architecture",
+      "topic": "Rooms and Areas",
+      "difficulty": "Intermediate",
+      "question": "You need to divide one open office into several schedulable rooms without adding physical partitions. Which approach is appropriate?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use a scope box around each desk"
+        },
+        {
+          "key": "B",
+          "text": "Use model lines and change their line style"
+        },
+        {
+          "key": "C",
+          "text": "Create dependent views for each desk area"
+        },
+        {
+          "key": "D",
+          "text": "Use room separation lines to define the required boundaries"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Use room separation lines to define the required boundaries",
+      "explanation": "Room separation lines create non-physical boundaries that allow distinct room elements to be defined and scheduled.",
+      "source_name": "Autodesk Revit Help – Rooms and Room Boundaries",
+      "source_url": "https://help.autodesk.com/cloudhelp/2027/ENU/Revit-ArchDesign/files/GUID-3D8B61D3-38C6-4B8F-97E1-797A05F5C5AD.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-075",
+      "subject": "Revit Architecture",
+      "topic": "Rooms and Areas",
+      "difficulty": "Intermediate",
+      "question": "A room schedule must report only rooms for the renovation phase. Which approach is appropriate?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Create or configure a schedule for the relevant phase"
+        },
+        {
+          "key": "B",
+          "text": "Set all rooms to the same workset"
+        },
+        {
+          "key": "C",
+          "text": "Use a material takeoff instead"
+        },
+        {
+          "key": "D",
+          "text": "Filter the schedule by view scale"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Create or configure a schedule for the relevant phase",
+      "explanation": "Rooms are phase-specific. A room schedule can be configured for a particular phase to report the corresponding room information.",
+      "source_name": "Autodesk Revit Help – About Phase-Specific Rooms and Boundaries",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/ENU/Revit-ArchDesign/files/GUID-2D1748B4-D94B-4445-BF90-6C2FDFB4B86E.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-076",
+      "subject": "Revit Architecture",
+      "topic": "Design Options",
+      "difficulty": "Intermediate",
+      "question": "A design team needs to compare two lobby layouts while keeping the common building shell unchanged. How should the alternatives generally be organised?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Place all alternatives in separate worksets and hide one"
+        },
+        {
+          "key": "B",
+          "text": "Duplicate the entire project file for each lobby and link both back"
+        },
+        {
+          "key": "C",
+          "text": "Use phases to represent simultaneous design alternatives"
+        },
+        {
+          "key": "D",
+          "text": "Place the alternative lobby elements in separate options within a design option set"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Place the alternative lobby elements in separate options within a design option set",
+      "explanation": "Design options are intended to manage alternative proposals within one project while common elements remain in the main model.",
+      "source_name": "Autodesk Revit Help – About Design Options and Rooms",
+      "source_url": "https://help.autodesk.com/cloudhelp/2023/ENU/RevitLT-Model/files/GUID-0EBE7972-4C7C-4727-AB4D-80D30C5694A7.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-077",
+      "subject": "Revit Architecture",
+      "topic": "Design Options",
+      "difficulty": "Intermediate",
+      "question": "When reviewing a view dedicated to a particular design option, which view property should be checked?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Discipline – Coordination"
+        },
+        {
+          "key": "B",
+          "text": "Visibility/Graphics Overrides – Design Options"
+        },
+        {
+          "key": "C",
+          "text": "View Range – Underlay"
+        },
+        {
+          "key": "D",
+          "text": "Annotation Crop – Scope Box"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Visibility/Graphics Overrides – Design Options",
+      "explanation": "A view can be configured to display the main model and selected design options; the design option visibility settings determine which alternative is shown.",
+      "source_name": "Autodesk Revit Help – About Design Options and Rooms",
+      "source_url": "https://help.autodesk.com/cloudhelp/2023/ENU/RevitLT-Model/files/GUID-0EBE7972-4C7C-4727-AB4D-80D30C5694A7.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-078",
+      "subject": "Revit Architecture",
+      "topic": "Design Options",
+      "difficulty": "Intermediate",
+      "question": "A room has different sizes in two lobby design alternatives. Where should the room elements generally be placed if each option needs its own room geometry?",
+      "options": [
+        {
+          "key": "A",
+          "text": "In a dependent view for each alternative"
+        },
+        {
+          "key": "B",
+          "text": "Only in the main model, with a different room tag per view"
+        },
+        {
+          "key": "C",
+          "text": "In the corresponding design options"
+        },
+        {
+          "key": "D",
+          "text": "In a separate workset for each alternative"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "In the corresponding design options",
+      "explanation": "If room shape, size or location varies by design option, rooms can be placed in the respective options so their boundaries follow the relevant option geometry.",
+      "source_name": "Autodesk Revit Help – About Design Options and Rooms",
+      "source_url": "https://help.autodesk.com/cloudhelp/2023/ENU/RevitLT-Model/files/GUID-0EBE7972-4C7C-4727-AB4D-80D30C5694A7.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-079",
+      "subject": "Revit Architecture",
+      "topic": "Views and Graphics",
+      "difficulty": "Intermediate",
+      "question": "Several floor plans must show identical crop extents and datum extents. Which feature can coordinate these extents?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A shared view filter applied to all categories"
+        },
+        {
+          "key": "B",
+          "text": "A common phase filter assigned to the levels"
+        },
+        {
+          "key": "C",
+          "text": "A shared scope box assigned to the relevant views and datums"
+        },
+        {
+          "key": "D",
+          "text": "A single dependent view placed on every sheet"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "A shared scope box assigned to the relevant views and datums",
+      "explanation": "A scope box can be assigned to multiple compatible views and datum elements to coordinate their extents.",
+      "source_name": "Autodesk Revit Help – Create a Scope Box",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Model/files/GUID-3E75F88D-D212-43D4-8176-5B7F305B60F2.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-080",
+      "subject": "Revit Architecture",
+      "topic": "Views and Graphics",
+      "difficulty": "Intermediate",
+      "question": "A plan view must show the same model area as another plan but retain independent annotations. Which workflow is designed for this?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Create a drafting view and trace the plan"
+        },
+        {
+          "key": "B",
+          "text": "Create a new scope box and delete the original view"
+        },
+        {
+          "key": "C",
+          "text": "Duplicate the project file and link it back"
+        },
+        {
+          "key": "D",
+          "text": "Create a dependent view from the primary view"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Create a dependent view from the primary view",
+      "explanation": "Dependent views share model display properties and crop relationship with the primary view while allowing view-specific annotations and sheet placement.",
+      "source_name": "Autodesk Revit Help – Dependent Views",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/RevitLT-DocumentPresent/files/GUID-BC6381E1-5337-412F-A2C4-1ED990D31E2E.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-081",
+      "subject": "Revit Architecture",
+      "topic": "Views and Graphics",
+      "difficulty": "Intermediate",
+      "question": "A view filter correctly identifies walls by fire rating, but its colour override is not visible. Which setting should be checked along with the filter rules?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The project browser grouping"
+        },
+        {
+          "key": "B",
+          "text": "The wall's base constraint only"
+        },
+        {
+          "key": "C",
+          "text": "The sheet's revision cloud sequence"
+        },
+        {
+          "key": "D",
+          "text": "Filter order and competing view graphic overrides"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Filter order and competing view graphic overrides",
+      "explanation": "Visibility and graphic overrides can be affected by filter order and other view-level overrides, including category and element overrides.",
+      "source_name": "Autodesk Revit Help – About View Filters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-87A63C25-99A6-428D-A0FF-112E4FC9C3D7.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-082",
+      "subject": "Revit Architecture",
+      "topic": "Schedules and Documentation",
+      "difficulty": "Intermediate",
+      "question": "A schedule must calculate a value using a numeric parameter and a constant factor. Which schedule feature is intended for this?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Combined Parameter with a label only"
+        },
+        {
+          "key": "B",
+          "text": "Calculated Value with a formula"
+        },
+        {
+          "key": "C",
+          "text": "Schedule key with a type mark"
+        },
+        {
+          "key": "D",
+          "text": "Conditional formatting rule"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Calculated Value with a formula",
+      "explanation": "Calculated values in schedules support formulas that derive values from fields and constants, subject to formula and data-type constraints.",
+      "source_name": "Autodesk Revit Help – Schedules and Calculated Values",
+      "source_url": "https://help.autodesk.com/cloudhelp/2026/ENU/RevitLT-DocumentPresent/files/GUID-AB32AD2D-69DB-4982-BC5E-0C3499E8BFAC.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-083",
+      "subject": "Revit Architecture",
+      "topic": "Schedules and Documentation",
+      "difficulty": "Intermediate",
+      "question": "A schedule needs a field that combines text from two parameters for display. Which feature should be considered?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Calculated Value using a numeric formula"
+        },
+        {
+          "key": "B",
+          "text": "Material takeoff category"
+        },
+        {
+          "key": "C",
+          "text": "Combined Parameters"
+        },
+        {
+          "key": "D",
+          "text": "Itemize every instance"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "Combined Parameters",
+      "explanation": "Combined Parameters can concatenate selected parameter values for schedule display, using a configured separator where applicable.",
+      "source_name": "Autodesk Revit Help – Schedules and Calculated Values",
+      "source_url": "https://help.autodesk.com/cloudhelp/2026/ENU/RevitLT-DocumentPresent/files/GUID-AB32AD2D-69DB-4982-BC5E-0C3499E8BFAC.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-084",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Intermediate",
+      "question": "A family parameter must be scheduled across multiple categories and shared consistently between families. Which parameter type is generally required?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Project information parameter"
+        },
+        {
+          "key": "B",
+          "text": "Reporting parameter"
+        },
+        {
+          "key": "C",
+          "text": "Shared parameter"
+        },
+        {
+          "key": "D",
+          "text": "Family parameter only"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "Shared parameter",
+      "explanation": "Shared parameters are definitions stored externally and can be reused across families and categories, and can be used in tags and schedules where supported.",
+      "source_name": "Autodesk Revit Help – About Parameters and Shared Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/RevitLT-Model/files/GUID-AEBA08ED-BDF1-4E59-825A-BF9E4A871CF5.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-085",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Intermediate",
+      "question": "A family dimension should report the distance between two reference planes rather than drive the geometry. Which parameter approach is suitable?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Associate a reporting parameter with the dimension"
+        },
+        {
+          "key": "B",
+          "text": "Use a project parameter to override the family constraint"
+        },
+        {
+          "key": "C",
+          "text": "Use a type parameter to lock the reference planes"
+        },
+        {
+          "key": "D",
+          "text": "Convert the dimension into a material parameter"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Associate a reporting parameter with the dimension",
+      "explanation": "Reporting parameters read a measured value from a dimension and can be used in formulas, rather than driving the dimension's geometry.",
+      "source_name": "Autodesk Revit Help – About Parameters and Shared Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/RevitLT-Model/files/GUID-AEBA08ED-BDF1-4E59-825A-BF9E4A871CF5.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-086",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Intermediate",
+      "question": "A family should offer a set of standard sizes that users can select, but the family file contains many possible types. What can simplify loading?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A key schedule"
+        },
+        {
+          "key": "B",
+          "text": "A view template"
+        },
+        {
+          "key": "C",
+          "text": "A phase filter"
+        },
+        {
+          "key": "D",
+          "text": "A type catalogue"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "A type catalogue",
+      "explanation": "Type catalogues let users choose selected family types during loading rather than loading every available type into the project.",
+      "source_name": "Autodesk Revit Help – About Parameters and Shared Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/RevitLT-Model/files/GUID-AEBA08ED-BDF1-4E59-825A-BF9E4A871CF5.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-087",
+      "subject": "Revit Architecture",
+      "topic": "Walls and Components",
+      "difficulty": "Intermediate",
+      "question": "A curtain wall needs a different mullion size on one side while retaining the same curtain grid layout. Which approach is most appropriate?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Change the curtain wall's phase filter"
+        },
+        {
+          "key": "B",
+          "text": "Use a room separation line along that edge"
+        },
+        {
+          "key": "C",
+          "text": "Assign a different mullion type to the selected curtain grid segment or edge"
+        },
+        {
+          "key": "D",
+          "text": "Convert the curtain wall into a stacked wall"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "Assign a different mullion type to the selected curtain grid segment or edge",
+      "explanation": "Curtain wall mullions can be selected and assigned suitable mullion types, allowing local variation without rebuilding the entire grid layout.",
+      "source_name": "Autodesk Revit Help – Curtain Elements",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/RevitLT-ArchDes/files/GUID-F20928C1-83F8-4CD0-870E-6F8F123A67C9.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-088",
+      "subject": "Revit Architecture",
+      "topic": "Phasing",
+      "difficulty": "Intermediate",
+      "question": "An existing wall is demolished and replaced by a new wall in the same location. Which phase properties should be coordinated for correct phase graphics?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Both walls' Base Constraint and Top Constraint only"
+        },
+        {
+          "key": "B",
+          "text": "Existing wall Phase Demolished and replacement wall Phase Created"
+        },
+        {
+          "key": "C",
+          "text": "The new wall's Phase Demolished and old wall's Phase Created"
+        },
+        {
+          "key": "D",
+          "text": "Both walls' Workset and Design Option only"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Existing wall Phase Demolished and replacement wall Phase Created",
+      "explanation": "The existing element is assigned a demolition phase, while the replacement element is assigned the phase in which new construction occurs.",
+      "source_name": "Autodesk Revit Help – About Phase-Specific Rooms and Boundaries",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/ENU/Revit-ArchDesign/files/GUID-2D1748B4-D94B-4445-BF90-6C2FDFB4B86E.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-089",
+      "subject": "Revit Architecture",
+      "topic": "Model Coordination",
+      "difficulty": "Intermediate",
+      "question": "A team wants to monitor selected levels and grids from a linked structural model for changes. Which Revit workflow is designed for this coordination?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Create Assembly"
+        },
+        {
+          "key": "B",
+          "text": "Copy/Monitor"
+        },
+        {
+          "key": "C",
+          "text": "Transfer Project Standards"
+        },
+        {
+          "key": "D",
+          "text": "Bind Link"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Copy/Monitor",
+      "explanation": "Copy/Monitor can establish monitored relationships for supported elements such as levels and grids, allowing changes to be reviewed.",
+      "source_name": "Autodesk Revit Help – Copy/Monitor and Linked Model Coordination",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Collaborate/files/GUID-604A097E-3C10-4D1A-B115-9BBB11B88416.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-090",
+      "subject": "Revit Architecture",
+      "topic": "Model Coordination",
+      "difficulty": "Intermediate",
+      "question": "A linked model appears in the wrong location even though its geometry is correct. Which coordination settings should be reviewed first?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The link positioning method and shared-coordinate relationship"
+        },
+        {
+          "key": "B",
+          "text": "The host model's schedule sorting and grouping"
+        },
+        {
+          "key": "C",
+          "text": "The linked model's view template and annotation crop"
+        },
+        {
+          "key": "D",
+          "text": "The linked model's family type catalogue"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "The link positioning method and shared-coordinate relationship",
+      "explanation": "Model placement depends on the selected positioning method and the coordinate relationship established between the host and linked files.",
+      "source_name": "Autodesk Revit Help – Copy/Monitor and Linked Model Coordination",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Collaborate/files/GUID-604A097E-3C10-4D1A-B115-9BBB11B88416.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Not separately marked technically reviewed"
+    },
+    {
+      "question_id": "RA-091",
+      "subject": "Revit Architecture",
+      "topic": "Rooms and Areas",
+      "difficulty": "Advanced",
+      "question": "A room schedule reports an area that differs from the architectural team's manually measured net area in a building with sloped perimeter walls. Which diagnostic sequence is most defensible?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verify room-bounding participation and boundary location, then review the room computation height"
+        },
+        {
+          "key": "B",
+          "text": "Change the room's upper limit and unconnected height, then override the schedule total"
+        },
+        {
+          "key": "C",
+          "text": "Turn on volume computation and replace the room separation lines with model lines"
+        },
+        {
+          "key": "D",
+          "text": "Reassign the room to another phase and change its tag orientation"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Verify room-bounding participation and boundary location, then review the room computation height",
+      "explanation": "Room area depends on which elements participate in room boundaries, where the boundary is computed within compound elements, and the computation height. These should be checked before changing unrelated room limits or display settings.",
+      "source_name": "Autodesk Revit Help – About Room Area",
+      "source_url": "https://help.autodesk.com/cloudhelp/2027/ENU/Revit-ArchDesign/files/GUID-9348929C-18CA-40AC-BB64-71D01CC52F2B.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Advanced section technically reviewed"
+    },
+    {
+      "question_id": "RA-092",
+      "subject": "Revit Architecture",
+      "topic": "Design Options",
+      "difficulty": "Advanced",
+      "question": "Two option sets are used for a floor plate: one changes the core location and the other changes tenant partitions. A room in a secondary option of the second set does not respond to walls in a secondary option of the first set. What best explains this behaviour?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A room can reference secondary options only when both option sets share the same name"
+        },
+        {
+          "key": "B",
+          "text": "A room can only be bounded by elements in the main model, never by option geometry"
+        },
+        {
+          "key": "C",
+          "text": "A room in a secondary option cannot use room-bounding elements from secondary options in other option sets"
+        },
+        {
+          "key": "D",
+          "text": "A room in a secondary option ignores all elements in the main model"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "A room in a secondary option cannot use room-bounding elements from secondary options in other option sets",
+      "explanation": "Revit's design-option room boundary rules restrict a room in a secondary option from referencing elements in secondary options of other option sets. The main model and applicable primary options remain part of the boundary context.",
+      "source_name": "Autodesk Revit Help – About Design Options and Rooms",
+      "source_url": "https://help.autodesk.com/cloudhelp/2024/ENU/Revit-Model/files/GUID-0EBE7972-4C7C-4727-AB4D-80D30C5694A7.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Advanced section technically reviewed"
+    },
+    {
+      "question_id": "RA-093",
+      "subject": "Revit Architecture",
+      "topic": "Design Options",
+      "difficulty": "Advanced",
+      "question": "A project has three lobby alternatives. The room boundary changes in each alternative because the walls move, but the room number and occupancy data must remain consistent. Which modelling strategy best follows Revit's design-option room rules?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Keep one room in the main model and expect it to follow the walls in every secondary option"
+        },
+        {
+          "key": "B",
+          "text": "Place a room in each relevant design option, then maintain matching room number and occupancy values across those option-specific rooms"
+        },
+        {
+          "key": "C",
+          "text": "Create one room per view and rely on dependent views to share its properties"
+        },
+        {
+          "key": "D",
+          "text": "Place the room only in the primary option and use room tags to represent it in all secondary options"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Place a room in each relevant design option, then maintain matching room number and occupancy values across those option-specific rooms",
+      "explanation": "Autodesk's guidance distinguishes rooms whose geometry stays the same from rooms whose shape, size or location varies. When room geometry varies by design option, add a room to each relevant option. Keep the required room number and occupancy values consistent across those option-specific room elements.",
+      "source_name": "Autodesk Revit Help – About Room Areas and Perimeters for Design Options",
+      "source_url": "https://help.autodesk.com/view/RVT/2023/ENU/?caas=caas%2FCloudHelp%2Fcloudhelp%2F2023%2FENU%2FRevit-Model%2Ffiles%2FGUID-FC68B775-FB10-4039-BFD9-410EDB09BA7B-htm.html",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Advanced section technically reviewed"
+    },
+    {
+      "question_id": "RA-094",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Advanced",
+      "question": "A nested door hardware family must be independently tagged and scheduled in the project, while remaining nested in the host door family. Which configuration is generally required?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Set the nested family as Shared and verify that its category and parameters support the intended tag and schedule"
+        },
+        {
+          "key": "B",
+          "text": "Convert the nested family parameters to reporting parameters and mark it as an annotation"
+        },
+        {
+          "key": "C",
+          "text": "Make the nested family Work Plane-Based and change its hosting reference"
+        },
+        {
+          "key": "D",
+          "text": "Place the nested family in a separate design option and use a key schedule"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Set the nested family as Shared and verify that its category and parameters support the intended tag and schedule",
+      "explanation": "A shared nested family can be exposed as an independently selectable and schedulable component in the host project. Its category and shared parameter setup must also suit the required tag and schedule.",
+      "source_name": "Autodesk Revit Help – Create a Nested Family with Interchangeable Components",
+      "source_url": "https://help.autodesk.com/cloudhelp/2024/ENU/RevitLT-Customize/files/GUID-1E6281BF-3194-40DB-8590-A60767E03FF1.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Advanced section technically reviewed"
+    },
+    {
+      "question_id": "RA-095",
+      "subject": "Revit Architecture",
+      "topic": "Families and Parameters",
+      "difficulty": "Advanced",
+      "question": "A family flexes correctly at nominal dimensions but fails at one extreme parameter combination. The geometry is driven by several labelled dimensions and equality constraints. What is the strongest first investigation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Identify over-constrained or conflicting reference relationships and test the failing parameter combination incrementally"
+        },
+        {
+          "key": "B",
+          "text": "Convert every dimensional parameter to a reporting parameter to prevent flexing errors"
+        },
+        {
+          "key": "C",
+          "text": "Replace all labelled dimensions with instance parameters and remove the reference planes"
+        },
+        {
+          "key": "D",
+          "text": "Change the family category and reload it before inspecting constraints"
+        }
+      ],
+      "correct_answer": "A",
+      "correct_answer_text": "Identify over-constrained or conflicting reference relationships and test the failing parameter combination incrementally",
+      "explanation": "Flexing failures often arise from conflicting constraints, unstable references or parameter combinations that cannot be satisfied. Isolating the failing combination and inspecting the reference/constraint framework is the appropriate diagnostic approach.",
+      "source_name": "Autodesk Revit Help – Constrain Family Geometry",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Customize/files/GUID-26CE1E00-72C1-49D6-9295-A59F50BAA0EF.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Advanced section technically reviewed"
+    },
+    {
+      "question_id": "RA-096",
+      "subject": "Revit Architecture",
+      "topic": "Schedules and Documentation",
+      "difficulty": "Advanced",
+      "question": "A multi-category schedule must display a shared parameter for doors and furniture, but the field is unavailable for one category. What should be checked before redesigning the schedule?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Change the schedule's itemization and sorting before checking parameter binding"
+        },
+        {
+          "key": "B",
+          "text": "Add the parameter only to the family types and expect all categories to inherit it automatically"
+        },
+        {
+          "key": "C",
+          "text": "Create a calculated value with the same name and use it as a substitute field"
+        },
+        {
+          "key": "D",
+          "text": "Confirm that the parameter is bound as a shared project parameter to the required categories and uses a compatible data type"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "Confirm that the parameter is bound as a shared project parameter to the required categories and uses a compatible data type",
+      "explanation": "A shared parameter definition alone does not guarantee availability in every project category. Its project binding must include the relevant categories, and the data type must be suitable for the intended use.",
+      "source_name": "Autodesk Revit Help – Create Shared Project Parameters",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-Model/files/GUID-114C68A9-FF2B-4D4C-A2DF-3AE7E1F174C8.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Advanced section technically reviewed"
+    },
+    {
+      "question_id": "RA-097",
+      "subject": "Revit Architecture",
+      "topic": "Views and Graphics",
+      "difficulty": "Advanced",
+      "question": "A set of coordinated floor plans uses scope boxes for consistent extents. One view refuses to follow the assigned scope box after a crop adjustment. Which check is most relevant?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Convert the view to a dependent view and delete the scope box"
+        },
+        {
+          "key": "B",
+          "text": "Check whether the view's crop region is controlled by the scope box and whether the crop is compatible with the view type"
+        },
+        {
+          "key": "C",
+          "text": "Change the view's phase filter and detail level to refresh the scope box"
+        },
+        {
+          "key": "D",
+          "text": "Recreate the level and reassign the view template before checking crop properties"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Check whether the view's crop region is controlled by the scope box and whether the crop is compatible with the view type",
+      "explanation": "Scope boxes control compatible view extents, but view crop settings and view-type compatibility determine whether the assigned scope box governs the crop. Confirm those relationships before recreating project datums.",
+      "source_name": "Autodesk Revit Help – View Properties",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-8BEBCEF0-CE2C-4635-8C7C-9D03503C0B79.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Advanced section technically reviewed"
+    },
+    {
+      "question_id": "RA-098",
+      "subject": "Revit Architecture",
+      "topic": "Model Coordination",
+      "difficulty": "Advanced",
+      "question": "A host architectural model uses a linked IFC model for room boundaries. The link is correctly positioned and Room Bounding is enabled, but rooms still fail to enclose around a curtain element from the IFC link. What is the most accurate next step?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Bind the link so its curtain panels become host-model walls"
+        },
+        {
+          "key": "B",
+          "text": "Check whether the linked curtain elements are supported as room boundaries; use room separation lines if they are not"
+        },
+        {
+          "key": "C",
+          "text": "Enable volume computation and change the room's phase filter"
+        },
+        {
+          "key": "D",
+          "text": "Change the link's shared coordinates to Project Base Point and reload it"
+        }
+      ],
+      "correct_answer": "B",
+      "correct_answer_text": "Check whether the linked curtain elements are supported as room boundaries; use room separation lines if they are not",
+      "explanation": "Autodesk documents that IFC-based curtain elements cannot define rooms. Where such an IFC curtain boundary is required, use room separation lines along the boundary. Confirm the IFC element type before applying the workaround.",
+      "source_name": "Autodesk Revit Help – Use Room Boundaries in a Linked Model",
+      "source_url": "https://help.autodesk.com/cloudhelp/2020/ENU/RevitLT-Model/files/GUID-64AF3A48-C121-4F26-B0BF-CDF93B389F75.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Advanced section technically reviewed"
+    },
+    {
+      "question_id": "RA-099",
+      "subject": "Revit Architecture",
+      "topic": "Phasing",
+      "difficulty": "Advanced",
+      "question": "A room schedule for a renovation phase includes rooms from the wrong time period, although the schedule's phase is set correctly. Which relationship should be investigated?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The room's design option and the host view's scope box"
+        },
+        {
+          "key": "B",
+          "text": "The room tag type mark and the schedule's itemization setting"
+        },
+        {
+          "key": "C",
+          "text": "The room's upper limit and the view's discipline"
+        },
+        {
+          "key": "D",
+          "text": "The phase assigned to each room and the phase of the plan view in which it was placed"
+        }
+      ],
+      "correct_answer": "D",
+      "correct_answer_text": "The phase assigned to each room and the phase of the plan view in which it was placed",
+      "explanation": "Rooms are phase-specific and are assigned to the phase specified by the view when placed. The room's phase and the schedule/view phase context must therefore be consistent.",
+      "source_name": "Autodesk Revit Help – About Phase-Specific Rooms and Boundaries",
+      "source_url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-ArchDesign/files/GUID-2D1748B4-D94B-4445-BF90-6C2FDFB4B86E.htm",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Advanced section technically reviewed"
+    },
+    {
+      "question_id": "RA-100",
+      "subject": "Revit Architecture",
+      "topic": "Design Options",
+      "difficulty": "Advanced",
+      "question": "A room is placed in the primary option of one design option set. At a shared boundary, a wall that appears in the selected view belongs to a secondary option in a different option set. The room perimeter does not follow that wall. What should be checked?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Whether the room tag is pinned and the annotation crop includes the wall"
+        },
+        {
+          "key": "B",
+          "text": "Whether the wall and room are assigned to the same workset"
+        },
+        {
+          "key": "C",
+          "text": "Whether the boundary wall belongs to the main model or a primary option of another option set; secondary options of other sets are not used for this room boundary"
+        },
+        {
+          "key": "D",
+          "text": "Whether the schedule uses combined parameters and grand totals"
+        }
+      ],
+      "correct_answer": "C",
+      "correct_answer_text": "Whether the boundary wall belongs to the main model or a primary option of another option set; secondary options of other sets are not used for this room boundary",
+      "explanation": "A room in a design option is defined by room-bounding elements in that option, in the main model, and in primary options of other option sets. It ignores room-bounding elements in secondary options of other option sets.",
+      "source_name": "Autodesk Revit Help – About Room Areas and Perimeters for Design Options",
+      "source_url": "https://help.autodesk.com/view/RVT/2023/ENU/?caas=caas%2FCloudHelp%2Fcloudhelp%2F2023%2FENU%2FRevit-Model%2Ffiles%2FGUID-FC68B775-FB10-4039-BFD9-410EDB09BA7B-htm.html",
+      "batch": 2,
+      "approval_status": "Approved by user",
+      "batch_status": "User Approved – detailed technical review partial",
+      "approval_date": "2026-11-26",
+      "technical_review_status": "Advanced section technically reviewed"
+    }
+  ]
+}
